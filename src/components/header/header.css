@@ -42,12 +42,44 @@ header {
 
 .me {
     background: linear-gradient(var(--color-primary), transparent);
-    width: 22rem;
-    height: 30rem;
+    width: 30rem;
+    height: 42rem;
     position: absolute;
-    left: calc(50% - 11rem);
+    left: 50%;
+    transform: translateX(-50%); /* Should center horizontally */
     margin-top: 4rem;
     border-radius: 7rem 7rem 0 0;
     overflow: hidden;
     padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+/* Scroll Down */
+
+.scroll_down {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+/* Media Queries (Medium Devices) */
+@media screen and (max-width: 1024px) {
+    .container {
+        height: 68vh;
+    }
+}
+
+/* Media Queries (Small Devices) */
+@media screen and (max-width: 600px) {
+    .container {
+        height: 100vh;
+    }
+
+    .header_socials,
+    .scroll_down {
+        display: none;
+    }
+
 }
