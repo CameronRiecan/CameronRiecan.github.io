@@ -24,7 +24,7 @@ header {
 .header_socials {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 0.8rem;
     position: absolute;
     left: 0;
@@ -69,10 +69,19 @@ header {
     .container {
         height: 68vh;
     }
+
+    .header_socials a::after {
+        visibility: hidden; /* Remove the content to prevent overlap on image */
+    }
+
+    .me {
+        width: 25rem; /* Adjust the width for better responsiveness */
+        height: 35rem; /* Adjust the height for better responsiveness */
+    }
 }
 
 /* Media Queries (Small Devices) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .container {
         height: 100vh;
     }
