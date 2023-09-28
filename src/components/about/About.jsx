@@ -14,27 +14,30 @@ const About = () => {
       <div className="container about_container">
         <div className="about_me">
           <div className='about_me-image'>
-            <img src={ME} alt='About Image' />
+            <img src={ME} alt='About Me Image' />
           </div>
         </div>
+
         <div className="about_content">
-          <article className='about_card'>
-            <FaAward className='about_icon'/>
-            <h5>Experience</h5>
-            <small>2+ Years</small>
-          </article>
-          <article className='about_card'>
-            <BiBook className='about_icon'/>
-            <h5>Education</h5>
-            <small>Bachelors</small>
-            <small>Juris Doctorate</small>
-            <small>Meta Frontend Developer Certificate</small>
-          </article>
-          <article className='about_card'>
-            <VscFolderLibrary className='about_icon'/>
-            <h5>Projects</h5>
-            <small>React, Vanilla JS, and more!</small>
-          </article>
+          <div className='about_cards'>
+            <article className='about_card'>
+              <FaAward className='about_icon'/>
+              <h5>Experience</h5>
+              <small>2+ Years</small>
+            </article>
+            <article className='about_card'>
+              <BiBook className='about_icon'/>
+              <h5>Education</h5>
+              <small>B.A.,</small>
+              <small>J.D.,</small>
+              <small>and Meta Frontend Developer Certificate</small>
+            </article>
+            <article className='about_card'>
+              <VscFolderLibrary className='about_icon'/>
+              <h5>Projects</h5>
+              <small>React, Vanilla JS, and more!</small>
+            </article>
+          </div>
         </div>
 
         <p>
