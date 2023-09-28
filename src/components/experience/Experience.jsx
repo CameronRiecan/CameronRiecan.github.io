@@ -19,33 +19,63 @@ const Experience = () => {
             </article>
             <article className='experience_details'>
               <BsPatchCheckFill />
-              <h4>HTML</h4>
+              <h4>CSS</h4>
+              <small className='text-light'>Intermediate</small>
+            </article>
+            <article className='experience_details'>
+              <BsPatchCheckFill />
+              <h4>Javascript</h4>
+              <small className='text-light'>Intermediate</small>
+            </article>
+            <article className='experience_details'>
+              <BsPatchCheckFill />
+              <h4>Git</h4>
               <small className='text-light'>Experienced</small>
             </article>
             <article className='experience_details'>
               <BsPatchCheckFill />
-              <h4>HTML</h4>
+              <h4>Bootstrap</h4>
               <small className='text-light'>Experienced</small>
             </article>
             <article className='experience_details'>
               <BsPatchCheckFill />
-              <h4>HTML</h4>
-              <small className='text-light'>Experienced</small>
+              <h4>React</h4>
+              <small className='text-light'>Intermediate</small>
             </article>
             <article className='experience_details'>
               <BsPatchCheckFill />
-              <h4>HTML</h4>
-              <small className='text-light'>Experienced</small>
-            </article>
-            <article className='experience_details'>
-              <BsPatchCheckFill />
-              <h4>HTML</h4>
-              <small className='text-light'>Experienced</small>
+              <h4>Command Line</h4>
+              <small className='text-light'>Beginner/Intermediate</small>
             </article>
           </div>
         </div>
-        <div className="experience_backend">
+        
+        {/* End of Frontend section*/}
 
+        <div className="experience_backend">
+          <h3>Other Tech</h3>
+          <div className='experience_content'>
+            <article className='experience_details'>
+              <BsPatchCheckFill />
+              <h4>Github</h4>
+              <small className='text-light'>Experienced</small>
+            </article>
+            <article className='experience_details'>
+              <BsPatchCheckFill />
+              <h4>PC, MacOS, Linux variations</h4>
+              <small className='text-light'>Experienced</small>
+            </article>
+            <article className='experience_details'>
+              <BsPatchCheckFill />
+              <h4>Oracle VM VirtualBox</h4>
+              <small className='text-light'>Intermediate</small>
+            </article>
+            <article className='experience_details'>
+              <BsPatchCheckFill />
+              <h4>Figma</h4>
+              <small className='text-light'>Beginner/Intermediate</small>
+            </article>
+        </div>
         </div>
       </div>
     </section>
