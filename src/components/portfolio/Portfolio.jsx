@@ -19,48 +19,60 @@ const Portfolio = () => {
             <img src={IMG1} alt='Project Image' />
           </div>
           <h3>This is a portfolio item title</h3>
-          <a href='https://github.com/CameronRiecan' className='btn'>Github</a>
-          <a href='https://dribble.com/Alien_pixels' className='btn btn-primary' target='_blank'>Live Demo</a>
+          <div className='portfolio_item-cta'>
+            <a href='https://github.com/CameronRiecan' className='btn'>Github</a>
+            <a href='https://dribble.com/Alien_pixels' className='btn btn-primary' target='_blank'>Live Demo</a>
+          </div>
         </article>
         <article className='portfolio_item'>
           <div className="portfolio_item-image">
             <img src={IMG2} alt='Project Image' />
           </div>
           <h3>This is a portfolio item title</h3>
-          <a href='https://github.com/CameronRiecan' className='btn'>Github</a>
-          <a href='https://dribble.com/Alien_pixels' className='btn btn-primary' target='_blank'>Live Demo</a>
+          <div className='portfolio_item-cta'>
+            <a href='https://github.com/CameronRiecan' className='btn'>Github</a>
+            <a href='https://dribble.com/Alien_pixels' className='btn btn-primary' target='_blank'>Live Demo</a>
+          </div>
         </article>
         <article className='portfolio_item'>
           <div className="portfolio_item-image">
             <img src={IMG3} alt='Project Image' />
           </div>
           <h3>This is a portfolio item title</h3>
-          <a href='https://github.com/CameronRiecan' className='btn'>Github</a>
-          <a href='https://dribble.com/Alien_pixels' className='btn btn-primary' target='_blank'>Live Demo</a>
+          <div className='portfolio_item-cta'>
+            <a href='https://github.com/CameronRiecan' className='btn'>Github</a>
+            <a href='https://dribble.com/Alien_pixels' className='btn btn-primary' target='_blank'>Live Demo</a>
+          </div>
         </article>
         <article className='portfolio_item'>
           <div className="portfolio_item-image">
             <img src={IMG4} alt='Project Image' />
           </div>
           <h3>This is a portfolio item title</h3>
-          <a href='https://github.com/CameronRiecan' className='btn'>Github</a>
-          <a href='https://dribble.com/Alien_pixels' className='btn btn-primary' target='_blank'>Live Demo</a>
+          <div className='portfolio_item-cta'>
+            <a href='https://github.com/CameronRiecan' className='btn'>Github</a>
+            <a href='https://dribble.com/Alien_pixels' className='btn btn-primary' target='_blank'>Live Demo</a>
+          </div>
         </article>
         <article className='portfolio_item'>
           <div className="portfolio_item-image">
             <img src={IMG5} alt='Project Image' />
           </div>
           <h3>This is a portfolio item title</h3>
-          <a href='https://github.com/CameronRiecan' className='btn'>Github</a>
-          <a href='https://dribble.com/Alien_pixels' className='btn btn-primary' target='_blank'>Live Demo</a>
+          <div className='portfolio_item-cta'>
+            <a href='https://github.com/CameronRiecan' className='btn'>Github</a>
+            <a href='https://dribble.com/Alien_pixels' className='btn btn-primary' target='_blank'>Live Demo</a>
+          </div>
         </article>
         <article className='portfolio_item'>
           <div className="portfolio_item-image">
             <img src={IMG6} alt='Project Image' />
           </div>
           <h3>This is a portfolio item title</h3>
-          <a href='https://github.com/CameronRiecan' className='btn'>Github</a>
-          <a href='https://dribble.com/Alien_pixels' className='btn btn-primary' target='_blank'>Live Demo</a>
+          <div className='portfolio_item-cta'>
+            <a href='https://github.com/CameronRiecan' className='btn'>Github</a>
+            <a href='https://dribble.com/Alien_pixels' className='btn btn-primary' target='_blank'>Live Demo</a>
+          </div>
         </article>
       </div>
     </section>
