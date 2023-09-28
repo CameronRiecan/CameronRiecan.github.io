@@ -55,3 +55,18 @@ input, textarea {
     resize: none;
     color: var(--color-white);
 }
+
+/* Media Queries (Medium Devices) */
+@media screen and (max-width: 1024px) {
+    .container.contact_container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+/* Media Queries (Small Devices) */
+@media screen and (max-width: 600px) {
+    .container.contact_container {
+        width: var(--container-width-sm);
+    }
+}
