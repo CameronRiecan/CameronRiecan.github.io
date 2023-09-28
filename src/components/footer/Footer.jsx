@@ -20,10 +20,13 @@ const Footer = () => {
       </ul>
 
       <div className='footer_socials'>
-        <a href='https://www.linkedin.com/in/cameron-riecan/' target='_blank'><BsLinkedin /><h5>Linkedin</h5></a>
-        <a href='https://github.com/CameronRiecan' target='_blank'><FaGithub /><h5>Github</h5></a>
-        <a href='https://www.instagram.com/cameronriecan/' target='_blank'><BsInstagram /><h5>Instagram</h5></a>
+        <a href='https://www.linkedin.com/in/cameron-riecan/' target='_blank'><BsLinkedin /></a>
+        <a href='https://github.com/CameronRiecan' target='_blank'><FaGithub /></a>
+        <a href='https://www.instagram.com/cameronriecan/' target='_blank'><BsInstagram /></a>
+      </div>
 
+      <div className="footer_copyright">
+        <small>&copy Cameron Riecan. All rights reserved.</small>
       </div>
     </footer>
   )
