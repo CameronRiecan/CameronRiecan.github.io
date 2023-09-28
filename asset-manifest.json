@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-portfolio-website/static/css/main.0c341725.css",
+    "main.js": "/react-portfolio-website/static/js/main.64f86a01.js",
+    "static/media/me.png": "/react-portfolio-website/static/media/me.b688c4ae5523271b7e64.png",
+    "static/media/me-about.jpg": "/react-portfolio-website/static/media/me-about.fb4452e7f286d3636ef9.jpg",
+    "static/media/portfolio5.png": "/react-portfolio-website/static/media/portfolio5.a82ae9a163c1ac5e3a07.png",
+    "static/media/portfolio2.jpg": "/react-portfolio-website/static/media/portfolio2.ae187bc4e43ae6dbc263.jpg",
+    "static/media/portfolio6.jpg": "/react-portfolio-website/static/media/portfolio6.72d1107e313049cf15a7.jpg",
+    "static/media/portfolio1.jpg": "/react-portfolio-website/static/media/portfolio1.f5e72352e5aa840702b8.jpg",
+    "static/media/portfolio3.jpg": "/react-portfolio-website/static/media/portfolio3.cbab42559fe73e73906f.jpg",
+    "static/media/Cameron_Riecan_CV.pdf": "/react-portfolio-website/static/media/Cameron_Riecan_CV.0597cf5cff31a0ff5ed6.pdf",
+    "static/media/portfolio4.jpg": "/react-portfolio-website/static/media/portfolio4.6bf60cbb8fe5f7d7af5d.jpg",
+    "index.html": "/react-portfolio-website/index.html",
+    "main.0c341725.css.map": "/react-portfolio-website/static/css/main.0c341725.css.map",
+    "main.64f86a01.js.map": "/react-portfolio-website/static/js/main.64f86a01.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c341725.css",
+    "static/js/main.64f86a01.js"
+  ]
+}
