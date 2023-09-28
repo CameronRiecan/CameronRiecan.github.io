@@ -41,3 +41,31 @@
     margin-top: 6px;
     color: var(--color-primary);
 }
+
+/* Media Queries (Medium Devices) */
+@media screen and (max-width: 1024px) {
+    .experience_container {
+        grid-template-columns: 1fr;
+    }
+
+    .experience_container > div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0;
+    }
+
+    .experience_content {
+        padding: 1rem;
+    }
+}
+
+/* Media Queries (Small Devices) */
+@media screen and (max-width: 600px) {
+    .container {
+        width: var(--container-width-sm);
+    }
+
+    section  > h2 {
+        margin-bottom: 2rem;
+    }
+}
