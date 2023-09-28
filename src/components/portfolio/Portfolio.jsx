@@ -7,6 +7,51 @@ import IMG4 from '../../assets/portfolio4.jpg'
 import IMG5 from '../../assets/portfolio5.png'
 import IMG6 from '../../assets/portfolio6.jpg'
 
+const data = [
+  {
+    id: 1,
+    image: IMG1,
+    title: 'Project Title',
+    github: 'https://github.com/CameronRiecan',
+    demo: 'https://dribble.com' 
+  },
+  {
+    id: 2,
+    image: IMG2,
+    title: 'Project Title 2',
+    github: 'https://github.com/CameronRiecan',
+    demo: 'https://dribble.com' 
+  },
+  {
+    id: 3,
+    image: IMG3,
+    title: 'Project Title 3',
+    github: 'https://github.com/CameronRiecan',
+    demo: 'https://dribble.com' 
+  },
+  {
+    id: 4,
+    image: IMG4,
+    title: 'Project Title 4',
+    github: 'https://github.com/CameronRiecan',
+    demo: 'https://dribble.com' 
+  },
+  {
+    id: 5,
+    image: IMG5,
+    title: 'Project Title 5',
+    github: 'https://github.com/CameronRiecan',
+    demo: 'https://dribble.com' 
+  },
+  {
+    id: 6,
+    image: IMG6,
+    title: 'Project Title 6',
+    github: 'https://github.com/CameronRiecan',
+    demo: 'https://dribble.com' 
+  }
+]
+
 const Portfolio = () => {
   return (
     <section id='portfolio'>
@@ -14,66 +59,23 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className='container portfolio_container'>
-        <article className='portfolio_item'>
-          <div className="portfolio_item-image">
-            <img src={IMG1} alt='Project Image' />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className='portfolio_item-cta'>
-            <a href='https://github.com/CameronRiecan' className='btn'>Github</a>
-            <a href='https://dribble.com/Alien_pixels' className='btn btn-primary' target='_blank'>Live Demo</a>
-          </div>
-        </article>
-        <article className='portfolio_item'>
-          <div className="portfolio_item-image">
-            <img src={IMG2} alt='Project Image' />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className='portfolio_item-cta'>
-            <a href='https://github.com/CameronRiecan' className='btn'>Github</a>
-            <a href='https://dribble.com/Alien_pixels' className='btn btn-primary' target='_blank'>Live Demo</a>
-          </div>
-        </article>
-        <article className='portfolio_item'>
-          <div className="portfolio_item-image">
-            <img src={IMG3} alt='Project Image' />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className='portfolio_item-cta'>
-            <a href='https://github.com/CameronRiecan' className='btn'>Github</a>
-            <a href='https://dribble.com/Alien_pixels' className='btn btn-primary' target='_blank'>Live Demo</a>
-          </div>
-        </article>
-        <article className='portfolio_item'>
-          <div className="portfolio_item-image">
-            <img src={IMG4} alt='Project Image' />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className='portfolio_item-cta'>
-            <a href='https://github.com/CameronRiecan' className='btn'>Github</a>
-            <a href='https://dribble.com/Alien_pixels' className='btn btn-primary' target='_blank'>Live Demo</a>
-          </div>
-        </article>
-        <article className='portfolio_item'>
-          <div className="portfolio_item-image">
-            <img src={IMG5} alt='Project Image' />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className='portfolio_item-cta'>
-            <a href='https://github.com/CameronRiecan' className='btn'>Github</a>
-            <a href='https://dribble.com/Alien_pixels' className='btn btn-primary' target='_blank'>Live Demo</a>
-          </div>
-        </article>
-        <article className='portfolio_item'>
-          <div className="portfolio_item-image">
-            <img src={IMG6} alt='Project Image' />
-          </div>
-          <h3>This is a portfolio item title</h3>
-          <div className='portfolio_item-cta'>
-            <a href='https://github.com/CameronRiecan' className='btn'>Github</a>
-            <a href='https://dribble.com/Alien_pixels' className='btn btn-primary' target='_blank'>Live Demo</a>
-          </div>
-        </article>
+        {
+          data.map(({id, image, title, github, demo}) => {
+            return (
+              <article key={id} className='portfolio_item'>
+              <div className="portfolio_item-image">
+                <img src={image} alt={title} />
+              </div>
+              <h3>{title}</h3>
+              <div className='portfolio_item-cta'>
+                <a href={github} className='btn'>Github</a>
+                <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+              </div>
+            </article>
+            )
+          }
+          )
+        }
       </div>
     </section>
   )
