@@ -16,7 +16,7 @@ const Contact = () => {
             <MdOutlineEmail />
             <h4>Email</h4>
             <h5>camriecan@gmail.com</h5>
-            <a href='mailto:camriecan@gmail.com'>Send a Message</a>
+            <a href='mailto:camriecan@gmail.com' target='_blank'>Send a Message</a>
           </article>
           <article className='contact_option'>
             <BsLinkedin />
@@ -33,7 +33,12 @@ const Contact = () => {
         </div>
         {/* End of Contact Options */}
 
-        <form action=''></form>
+        <form action=''>
+          <input type="text" name='name' placeholder='Your Full Name' required />
+          <input type='email' name='email' placeholder='Your Email' required />
+          <textarea name='message' rows='7' placeholder='Your Message' required></textarea>
+          <button type='submit' className='btn btn-primary'>Send Message</button>
+        </form>
       </div>
     </section>
   )
