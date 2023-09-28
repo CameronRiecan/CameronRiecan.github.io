@@ -61,11 +61,12 @@
 
 /* Media Queries (Small Devices) */
 @media screen and (max-width: 600px) {
-    .container {
-        width: var(--container-width-sm);
+    .experience_container {
+        gap: 1rem;
     }
 
-    section  > h2 {
-        margin-bottom: 2rem;
+    .experience_container > div {
+        width: 100%;
+        padding: 2rem 1rem;
     }
 }
