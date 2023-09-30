@@ -97,7 +97,7 @@ const Experience = () => {
                 <small className='text-light'>Beginner/Intermediate</small>
               </div>
             </article>
-        </div>
+          </div>
         </div>
       </div>
     </section>

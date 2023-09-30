@@ -1,6 +1,6 @@
 /* Services Component CSS */
 
-.service_container {
+.services_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
@@ -54,7 +54,7 @@
 
 /* Media Queries (Medium Devices) */
 @media screen and (max-width: 1024px) {
-    .service_container {
+    .services_container {
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
