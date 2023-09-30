@@ -13,42 +13,42 @@ const data = [
     image: IMG1,
     title: 'Project Title',
     github: 'https://github.com/CameronRiecan',
-    demo: 'https://dribble.com' 
+    demo: 'https://dribble.com'
   },
   {
     id: 2,
     image: IMG2,
     title: 'Project Title 2',
     github: 'https://github.com/CameronRiecan',
-    demo: 'https://dribble.com' 
+    demo: 'https://dribble.com'
   },
   {
     id: 3,
     image: IMG3,
     title: 'Project Title 3',
     github: 'https://github.com/CameronRiecan',
-    demo: 'https://dribble.com' 
+    demo: 'https://dribble.com'
   },
   {
     id: 4,
     image: IMG4,
     title: 'Project Title 4',
     github: 'https://github.com/CameronRiecan',
-    demo: 'https://dribble.com' 
+    demo: 'https://dribble.com'
   },
   {
     id: 5,
     image: IMG5,
     title: 'Project Title 5',
     github: 'https://github.com/CameronRiecan',
-    demo: 'https://dribble.com' 
+    demo: 'https://dribble.com'
   },
   {
     id: 6,
     image: IMG6,
     title: 'Project Title 6',
     github: 'https://github.com/CameronRiecan',
-    demo: 'https://dribble.com' 
+    demo: 'https://dribble.com'
   }
 ]
 
@@ -68,8 +68,8 @@ const Portfolio = () => {
               </div>
               <h3>{title}</h3>
               <div className='portfolio_item-cta'>
-                <a href={github} className='btn'>Github</a>
-                <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+                <a href={github} className='btn' rel='noopener noreferrer'>Github</a>
+                <a href={demo} className='btn btn-primary' target='_blank' rel='noopener noreferrer'>Live Demo</a>
               </div>
             </article>
             )
