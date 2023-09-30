@@ -53,7 +53,7 @@
 }
 
 /* Media Queries (Medium Devices) */
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 601px) and (max-width: 1024px) {
     .services_container {
         grid-template-columns: 1fr 1fr;
         gap: 2rem;
@@ -62,6 +62,11 @@
     .service {
         height: auto;
     }
+
+    .item-three {
+        grid-column: 1 / span 2; /* added to make third item span two columns */
+        grid-row: 2; /* place it in the second row, below first two items */
+    }
 }
 
 /* Media Queries (Small Devices) */
@@ -69,5 +74,9 @@
     .services_container {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+
+    .service {
+        height: auto;
     }
 }

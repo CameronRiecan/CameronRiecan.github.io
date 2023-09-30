@@ -81,7 +81,7 @@ const Services = () => {
         </article>
         {/* End of Web Devlopment */}
 
-        <article className='service'>
+        <article className='service item-three'>
           <div className='service_head'>
             <h3>Content Creation</h3>
           </div>
