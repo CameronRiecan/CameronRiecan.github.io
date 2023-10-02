@@ -74,10 +74,6 @@ header {
 
 /* Media Queries (Medium Devices) */
 @media screen and (max-width: 1024px) {
-    .container {
-        height: 68vh;
-    }
-
     .header_socials a::after {
         visibility: hidden; /* Remove the content to prevent overlap on image */
     }
