@@ -66,6 +66,12 @@ h1 {
 
 section {
     margin-top: 8rem;
+    margin-bottom: 3rem; /* Adjust value as needed for spacing */
+}
+
+.row-container {
+    display: grid;
+    grid-auto-rows: minmax(auto, 1fr);
 }
 
 section > h2, section > h5 {
