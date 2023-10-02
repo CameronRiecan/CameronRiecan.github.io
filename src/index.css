@@ -65,6 +65,7 @@ h1 {
 }
 
 section {
+    display: block;
     margin-top: 8rem;
     margin-bottom: 3rem; /* Adjust value as needed for spacing */
 }

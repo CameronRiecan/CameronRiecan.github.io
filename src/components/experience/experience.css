@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    justify-content: center; /* center align the grid horizontally */
 }
 
 .experience_container > div {
@@ -27,14 +28,17 @@
 }
 
 .experience_content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: left;
 }
 
 .experience_details {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
+    align-items: center;
 }
 
 .experience_details-icon {
