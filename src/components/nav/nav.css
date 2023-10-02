@@ -3,9 +3,8 @@
 nav {
     background: rgba(0, 0, 0, 0.3);
     width: max-content;
-    display: block;
     padding: 0.7rem 1.7rem;
-    position: fixed; /* to afix to page */
+    position: fixed; /* to afix to page on scroll */
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
