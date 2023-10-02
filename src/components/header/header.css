@@ -3,9 +3,10 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    padding-top: 7rem;
-    overflow: hidden;
+    text-align: center;
+    /* height: 100vh; */
+    padding-top: 7rem 0;
+    margin-top: 3rem;
 }
 
 .header_container {
@@ -46,15 +47,18 @@ header {
 
 .me {
     background: linear-gradient(var(--color-primary), transparent);
-    width: 30rem;
+   /* width: 30rem;
     height: 42rem;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%); /* Should center horizontally */
-    margin-top: 4rem;
+    transform: translateX(-50%);
+    margin-top: 4rem; */
+    width: 30rem;
+    max-width: 100%;
     border-radius: 7rem 7rem 0 0;
     overflow: hidden;
     padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+    margin: 2rem auto 0;
 }
 
 /* Scroll Down */
@@ -86,10 +90,6 @@ header {
 
 /* Media Queries (Small Devices) */
 @media screen and (max-width: 650px) {
-    .container {
-        height: 100vh;
-    }
-
     .header_socials,
     .scroll_down {
         display: none;
