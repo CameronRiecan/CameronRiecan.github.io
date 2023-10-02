@@ -36,7 +36,7 @@ const data = [
     avatar: AVTR4,
     name: "Person 4",
     review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quod nam impedit soluta odio possimus!'
-  },
+  }
 ]
 
 const Testimonials = () => {
@@ -48,18 +48,20 @@ const Testimonials = () => {
       <Swiper className="container testimonials_container"
       modules={[Navigation, Pagination]}
       spaceBetween={40}
+      loop={true}
       slidesPerView={1}
       navigation
-      pagination={{ clickable: true }}>
+      pagination={{ clickable: true }}
+      >
         {
           data.map(({avatar, name, review}, index) => {
             return (
               <SwiperSlide key={index} className='testimonial'>
-              <div className='client_avatar'>
-                <img src={avatar} alt="avatar" />
-              </div>
-              <h5 className='client_name'>{name}</h5>
-              <small className='client_review'>{review}</small>
+                <div className='client_avatar'>
+                  <img src={avatar} alt="avatar" />
+                </div>
+                <h5 className='client_name'>{name}</h5>
+                <small className='client_review'>{review}</small>
               </SwiperSlide>
             )
           })
