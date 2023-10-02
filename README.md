@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Portfolio Website for Cameron Riecan
+
+This is a portfolio react app website project created by Cameron Riecan. This project uses React js, Swipper js, Mail js, and react-icons.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
