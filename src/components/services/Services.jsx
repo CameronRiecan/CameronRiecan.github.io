@@ -41,6 +41,7 @@ const Services = () => {
             </li>
           </ul>
         </article>
+
         {/* End of UI/UX */}
 
         <article className='service'>
@@ -79,6 +80,7 @@ const Services = () => {
             </li>
           </ul>
         </article>
+
         {/* End of Web Devlopment */}
 
         <article className='service item-three'>
@@ -113,7 +115,9 @@ const Services = () => {
             </li>
           </ul>
         </article>
+
         {/* End of Content Creation */}
+        
       </div>
     </section>
   )
