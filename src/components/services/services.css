@@ -13,7 +13,8 @@
     border: 1px solid var(--color-primary);
     flex: 0 1 calc(33.33% - 2rem); /* adjust width to a third minus gap */
     transition: var(--transition);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    min-height: 0;
 }
 
 .service:hover {
@@ -67,6 +68,6 @@
 /* Media Queries (Small Devices) */
 @media screen and (max-width: 600px) {
     .service {
-        flex: 0 1 calc(100%);
+        flex: 0 1 calc(100% - 2rem);
     }
 }
