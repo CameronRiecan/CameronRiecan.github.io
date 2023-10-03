@@ -87,17 +87,6 @@ header {
         display: none;
     }
 
-    .container.header_container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding-top: 3rem;
-        margin-top: 3rem;
-        margin-bottom: 3rem;
-    }
-
     .me {
         max-width: 70%;
         margin-top: 2rem;
