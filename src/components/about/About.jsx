@@ -44,7 +44,13 @@ const About = () => {
           </div>
 
           <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            I am Cameron Riecan, a dedicated web developer based in the vibrant city of Los Angeles, CA. My passion for web development has led me to acquire proficiency in HTML5, CSS3, JavaScript, React, and the latest technologies. I am adept at crafting visually appealing and highly functional websites that provide an exceptional user experience on both desktop and mobile platforms. My technical skills extend to using Git, GitHub, Command Line, Visual Studio Code IDE, JSON, Node.js, Node Package Manager, and React.js, ensuring that projects are efficiently managed and delivered with precision.
+          </p>
+          <p>
+            My educational background includes a Meta Front-End Developer Specialization certificate from Meta and Coursera. I also hold a Juris Doctorate from Seattle University School of Law and a Bachelor of Arts in Political Science from Fordham University in New York, NY.
+          </p>
+          <p>
+            In my free time, I enjoy exploring the diverse culinary offerings of Los Angeles, studying Japanese, and of course, coding. If you're interested in discussing potential projects or have any inquiries, please feel free to reach out to me at any of the available methods that are provided. I'm excited to connect and explore new opportunities with you.
           </p>
 
           <a href='#contact' className='btn btn-primary'>Let's Talk</a>
