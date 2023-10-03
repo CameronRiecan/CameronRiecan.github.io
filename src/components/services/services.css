@@ -1,17 +1,19 @@
 /* Services Component CSS */
 
 .services_container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
 }
 
 .service {
     background: var(--color-bg-variant);
     border-radius: 0 0 2rem 2rem;
     border: 1px solid var(--color-primary);
-    height: fit-content;
+    flex: 0 1 calc(33.33% - 2rem); /* adjust width to a third minus gap */
     transition: var(--transition);
+    margin-bottom: 1rem;
 }
 
 .service:hover {
@@ -54,29 +56,17 @@
 
 /* Media Queries (Medium Devices) */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-    .services_container {
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-    }
-
     .service {
-        height: auto;
+        flex: 0 1 calc(50% - 2rem); /* Adjust width to 50% minus gap */
     }
-
     .item-three {
-        grid-column: 1 / span 2; /* added to make third item span two columns */
-        grid-row: 2; /* place it in the second row, below first two items */
+        flex: 0 1 calc(100%);
     }
 }
 
 /* Media Queries (Small Devices) */
 @media screen and (max-width: 600px) {
-    .services_container {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
     .service {
-        height: auto;
+        flex: 0 1 calc(100%);
     }
 }
