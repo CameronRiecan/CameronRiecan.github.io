@@ -1,8 +1,9 @@
 /* Portfolio Component CSS */
 
 .portfolio_container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex; /* change from grid to flex for better responsiveness */
+    flex-wrap: wrap;
+    justify-content: flex-start;
     gap: 2.5rem;
 }
 
@@ -12,6 +13,8 @@
     border-radius: 2rem;
     border: 1px solid transparent;
     transition: var(--transition);
+    flex: 0 1 calc(33.33% - 2.5rem);
+    margin-bottom: 2rem;
 }
 
 .portfolio_item:hover {
@@ -36,16 +39,18 @@
 
 /* Media Queries (Medium Devices) */
 @media screen and (max-width: 1024px) {
+    .portfolio_item {
+        flex: 0 1 calc(50% - 1.25rem); /* Adjust width to 50% minus gap */
+        margin-bottom: 1.25rem;
+    }
     .portfolio_container {
-        grid-template-columns: 1fr 1fr;
-        gap: 1.2rem;
+        justify-content: center;
     }
 }
 
 /* Media Queries (Small Devices) */
 @media screen and (max-width: 600px) {
-    .portfolio_container {
-        grid-template-columns: 1fr;
-        gap: 1rem;
+    .portfolio_item {
+        flex: 0 1 calc(100%);
     }
 }
