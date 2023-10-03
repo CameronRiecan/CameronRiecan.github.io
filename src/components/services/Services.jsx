@@ -95,7 +95,7 @@ const Services = () => {
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p><b>Engaging Copy.</b> Juris Doctorate degree and extensive legal writing experience brings unique perspective to content creation.</p>
+              <p><b>Engaging Copy.</b> Juris Doctorate degree and extensive legal writing experience brings unique perspective.</p>
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
@@ -111,7 +111,7 @@ const Services = () => {
             </li>
             <li>
               <BiCheck className='service_list-icon'/>
-              <p><b>AI-Powered Content.</b> Leverage cutting-edge AI technologies like chatGPT, to create dynamic and personalized content experiences</p>
+              <p><b>AI-Powered Content.</b> Leverage cutting-edge AI technologies like chatGPT, to create dynamic and personalized content.</p>
             </li>
           </ul>
         </article>
