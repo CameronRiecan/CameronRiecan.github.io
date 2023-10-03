@@ -12,6 +12,9 @@ const Footer = () => {
     });
   };
 
+  let currentYear = new Date();
+  let theYear = currentYear.getFullYear();
+
   return (
     <footer>
       <a href='#top' onClick={scrollToTop} className='footer_logo'>Cameron Riecan</a>
@@ -33,7 +36,7 @@ const Footer = () => {
       </div>
 
       <div className="footer_copyright">
-        <small>&copy; Cameron Riecan. All rights reserved.</small>
+        <small>&copy; {theYear} Cameron Riecan. All rights reserved.</small>
       </div>
     </footer>
   )
