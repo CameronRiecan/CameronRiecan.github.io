@@ -79,8 +79,22 @@ const Experience = () => {
             <article className='experience_details'>
               <BsPatchCheckFill className='experience_details-icon' />
               <div>
-                <h4>PC, MacOS, Linux</h4>
+                <h4>PC</h4>
                 <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+            <article className='experience_details'>
+              <BsPatchCheckFill className='experience_details-icon' />
+              <div>
+                <h4>Mac</h4>
+                <small className='text-light'>Experienced</small>
+              </div>
+            </article>
+            <article className='experience_details'>
+              <BsPatchCheckFill className='experience_details-icon' />
+              <div>
+                <h4>Linux</h4>
+                <small className='text-light'>Intermediate</small>
               </div>
             </article>
             <article className='experience_details'>
