@@ -33,19 +33,19 @@ const Contact = () => {
             <MdOutlineEmail className='content_option-icon' />
             <h4>Email</h4>
             <h5>camriecan@gmail.com</h5>
-            <a href='mailto:camriecan@gmail.com' target='_blank'>Send a Message</a>
+            <a href='mailto:camriecan@gmail.com' target='_blank' rel='noreferrer'>Send a Message</a>
           </article>
           <article className='contact_option'>
             <BsLinkedin className='content_option-icon' />
             <h4>Messenger</h4>
             <h5>Linkedin</h5>
-            <a href='https://www.linkedin.com/in/cameron-riecan' target='_blank'>Send a Message</a>
+            <a href='https://www.linkedin.com/in/cameron-riecan' target='_blank' rel='noreferrer'>Send a Message</a>
           </article>
           <article className='contact_option'>
             <BsInstagram className='content_option-icon' />
             <h4>DM</h4>
             <h5>Instagram</h5>
-            <a href='https://ig.me/m/cameronriecan' target='_blank'>Send a Message</a>
+            <a href='https://ig.me/m/cameronriecan' target='_blank' rel='noreferrer'>Send a Message</a>
           </article>
         </div>
         {/* End of Contact Options */}
