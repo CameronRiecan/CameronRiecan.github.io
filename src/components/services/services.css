@@ -68,6 +68,11 @@
 /* Media Queries (Small Devices) */
 @media screen and (max-width: 600px) {
     .service {
-        flex: 0 1 calc(100% - 2rem);
+        flex: 0 1 calc(100%);
+        margin-bottom: 1rem;
+    }
+
+    .services_container {
+        gap: 1.5rem;
     }
 }
