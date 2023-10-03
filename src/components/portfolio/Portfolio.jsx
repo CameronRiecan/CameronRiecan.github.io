@@ -11,22 +11,22 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'Project Title',
-    github: 'https://github.com/CameronRiecan',
-    demo: 'https://dribble.com'
+    title: 'Portfolio React App',
+    github: 'https://github.com/CameronRiecan/cameronriecan.github.io',
+    demo: 'https://cameronriecan.github.io/'
   },
   {
     id: 2,
     image: IMG2,
-    title: 'Project Title 2',
-    github: 'https://github.com/CameronRiecan',
-    demo: 'https://dribble.com'
+    title: 'Calculator React App',
+    github: 'https://github.com/CameronRiecan/SimpleCalculatorReactApp',
+    demo: 'https://cameronriecan.github.io/SimpleCalculatorReactApp/'
   },
   {
     id: 3,
     image: IMG3,
-    title: 'Project Title 3',
-    github: 'https://github.com/CameronRiecan',
+    title: 'Reserve a Restaurant Table React App',
+    github: 'https://github.com/CameronRiecan/ll_restaurant_webapp',
     demo: 'https://dribble.com'
   },
   {
