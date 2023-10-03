@@ -3,7 +3,7 @@
 .services_container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     gap: 2rem;
 }
 
@@ -58,7 +58,7 @@
 /* Media Queries (Medium Devices) */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
     .service {
-        flex: 0 1 calc(50% - 2rem); /* Adjust width to 50% minus gap */
+        flex: 0 1 calc(50% - 1rem); /* Adjust width to 50% minus gap */
     }
     .item-three {
         flex: 0 1 calc(100%);

@@ -3,7 +3,7 @@
 .portfolio_container {
     display: flex; /* change from grid to flex for better responsiveness */
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 2.5rem;
 }
 
@@ -38,7 +38,7 @@
 }
 
 /* Media Queries (Medium Devices) */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
     .portfolio_item {
         flex: 0 1 calc(50% - 1.25rem); /* Adjust width to 50% minus gap */
         margin-bottom: 1.25rem;
