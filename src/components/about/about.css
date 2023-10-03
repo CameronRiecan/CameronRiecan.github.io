@@ -85,6 +85,10 @@
 
 /* Media Queries (Medium Devices) */
 @media screen and (max-width: 1024px) {
+    #about {
+        margin-top: 4rem;
+    }
+
     .about_container {
         grid-template-columns: 1fr;
         gap: 0;
