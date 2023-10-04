@@ -51,7 +51,12 @@ const Testimonials = () => {
       loop={true}
       slidesPerView={1}
       navigation
-      pagination={true}
+      pagination={{
+        clickable: true,
+        renderBullet: (index) => {
+          return `<span aria-label="${data[index].name}: ${data[index].review}"></span>`;
+        }
+      }}
       >
         {
           data.map(({avatar, name, review}, index) => {
