@@ -30,19 +30,19 @@ const Contact = () => {
       <div className='container contact_container row-container'>
         <div className='contact_options'>
           <article className='contact_option'>
-            <MdOutlineEmail className='content_option-icon' />
+            <MdOutlineEmail className='content_option-icon' aria-label='email' />
             <h4>Email</h4>
             <h5>camriecan@gmail.com</h5>
             <a href='mailto:camriecan@gmail.com' target='_blank' rel='noreferrer'>Send a Message</a>
           </article>
           <article className='contact_option'>
-            <BsLinkedin className='content_option-icon' />
+            <BsLinkedin className='content_option-icon' aria-label='LinkedIn Messenger' />
             <h4>Messenger</h4>
             <h5>Linkedin</h5>
             <a href='https://www.linkedin.com/in/cameron-riecan' target='_blank' rel='noreferrer'>Send a Message</a>
           </article>
           <article className='contact_option'>
-            <BsInstagram className='content_option-icon' />
+            <BsInstagram className='content_option-icon' aria-label='Instagram DM' />
             <h4>DM</h4>
             <h5>Instagram</h5>
             <a href='https://ig.me/m/cameronriecan' target='_blank' rel='noreferrer'>Send a Message</a>
@@ -51,11 +51,11 @@ const Contact = () => {
         {/* End of Contact Options */}
 
         <form ref={form} onSubmit={sendEmail}>
-          <label>Name:</label>
+          <label htmlFor='name'>Name:</label>
           <input type="text" name='name' placeholder='Your Full Name' required />
-          <label>Email:</label>
+          <label htmlFor='email'>Email:</label>
           <input type='email' name='email' placeholder='Your Email' required />
-          <label>Message:</label>
+          <label htmlFor='message'>Message:</label>
           <textarea name='message' rows='7' placeholder='Your Message' required></textarea>
           <button type='submit' className='btn btn-primary'>Send Message</button>
         </form>
