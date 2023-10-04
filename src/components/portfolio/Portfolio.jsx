@@ -39,18 +39,21 @@ const data = [
   {
     id: 5,
     image: IMG5,
-    title: 'Project Title 5',
-    github: 'https://github.com/CameronRiecan',
-    demo: 'https://dribble.com'
+    title: 'Project Coming Soon...',
+    github: '', //Empty URL
+    demo: '' //Empty URL
   },
   {
     id: 6,
     image: IMG6,
-    title: 'Project Title 6',
-    github: 'https://github.com/CameronRiecan',
-    demo: 'https://dribble.com'
+    title: 'Project Coming Soon...',
+    github: '', //Empty URL
+    demo: '' //Empty URL
   }
-]
+].map((item) => ({
+  ...item,
+  isDisabled: !item.github || !item.demo,
+}));
 
 const Portfolio = () => {
   return (
@@ -60,7 +63,7 @@ const Portfolio = () => {
 
       <div className='container portfolio_container'>
         {
-          data.map(({id, image, title, github, demo}) => {
+          data.map(({id, image, title, github, demo, isDisabled }) => {
             return (
               <article key={id} className='portfolio_item'>
                 <div className="portfolio_item-image">
@@ -68,13 +71,34 @@ const Portfolio = () => {
                 </div>
                 <h3>{title}</h3>
                 <div className='portfolio_item-cta'>
-                  <a href={github} className='btn' target='_blank' rel='noopener noreferrer'>Github</a>
-                  <a href={demo} className='btn btn-primary' target='_blank' rel='noopener noreferrer'>Live Demo</a>
+                  {isDisabled ? (
+                    <span className="btn disabled">Github</span>
+                  ) : (
+                    <a
+                      href={github}
+                      className="btn"
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      Github
+                    </a>
+                  )}
+                  {isDisabled ? (
+                    <span className="btn btn-primary disabled">Live Demo</span>
+                  ) : (
+                    <a
+                      href={demo}
+                      className="btn btn-primary"
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      Live Demo
+                    </a>
+                  )}
                 </div>
               </article>
-            )
-          }
-          )
+            );
+          });
         }
       </div>
     </section>
