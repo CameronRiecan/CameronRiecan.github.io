@@ -4,8 +4,12 @@ import CV from '../../assets/Cameron_Riecan_CV.pdf'
 const CTA = () => {
   return (
     <div className='cta'>
-       <a href={CV} download className='btn'>Download CV</a>
-       <a href='#contact' className='btn btn-primary'>Contact me!</a>
+      <a href={CV} download className='btn' aria-label='Download CV'>
+        Download CV
+      </a>
+      <a href='#contact' className='btn btn-primary' aria-label='Contact me'>
+        Contact me!
+      </a>
     </div>
   )
 }
