@@ -12,7 +12,7 @@ const HeaderSocials = () => {
           rel='noopener noreferrer'
           aria-label='LinkedIn'
         >
-          <BsLinkedin />
+          <BsLinkedin aria-hidden='true' />
           <h5 className='sr-only'>Linkedin</h5>
         </a>
         <a
@@ -21,7 +21,7 @@ const HeaderSocials = () => {
           rel='noopener noreferrer'
           aria-label='Github'
         >
-          <FaGithub />
+          <FaGithub aria-hidden='true' />
           <h5 className='sr-only'>Github</h5>
         </a>
         <a
@@ -30,7 +30,7 @@ const HeaderSocials = () => {
           rel='noopener noreferrer'
           aria-label='Instagram'
         >
-          <BsInstagram />
+          <BsInstagram aria-hidden='true' />
           <h5 className='sr-only'>Instagram</h5>
         </a>
     </div>
