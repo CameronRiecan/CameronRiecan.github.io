@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8e2ef540.css",
-    "main.js": "/static/js/main.2322cb2e.js",
+    "main.css": "/static/css/main.59d4071b.css",
+    "main.js": "/static/js/main.edf919fd.js",
     "static/media/me.png": "/static/media/me.b688c4ae5523271b7e64.png",
     "static/media/me-about.jpg": "/static/media/me-about.7135b48142812830332a.jpg",
     "static/media/Cameron_Riecan_CV.pdf": "/static/media/Cameron_Riecan_CV.0597cf5cff31a0ff5ed6.pdf",
@@ -16,11 +16,11 @@
     "static/media/avatar3.jpg": "/static/media/avatar3.e2297f42236dcc70ab20.jpg",
     "static/media/avatar2.jpg": "/static/media/avatar2.643870a29cb66682198e.jpg",
     "index.html": "/index.html",
-    "main.8e2ef540.css.map": "/static/css/main.8e2ef540.css.map",
-    "main.2322cb2e.js.map": "/static/js/main.2322cb2e.js.map"
+    "main.59d4071b.css.map": "/static/css/main.59d4071b.css.map",
+    "main.edf919fd.js.map": "/static/js/main.edf919fd.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e2ef540.css",
-    "static/js/main.2322cb2e.js"
+    "static/css/main.59d4071b.css",
+    "static/js/main.edf919fd.js"
   ]
 }
