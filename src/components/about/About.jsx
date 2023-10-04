@@ -12,9 +12,9 @@ const About = () => {
       <h2>About me</h2>
 
       <div className="container about_container">
-        <div className="about_me">
+        <div className="about_me" aria-hidden='true'>
           <div className='about_me-image'>
-            <img src={ME} alt='About Me' />
+            <img src={ME} alt='About Me Cameron Riecan' />
           </div>
         </div>
 
@@ -53,7 +53,9 @@ const About = () => {
             In my free time, I enjoy exploring the diverse culinary offerings of Los Angeles, studying Japanese, and of course, coding. If you're interested in discussing potential projects or have any inquiries, please feel free to reach out to me at any of the available methods that are provided. I'm excited to connect and explore new opportunities with you.
           </p>
 
-          <a href='#contact' className='btn btn-primary'>Let's Talk</a>
+          <a href='#contact' className='btn btn-primary' aria-label='Contact me'>
+            Let's Talk
+          </a>
         </div>
       </div>
     </section>
