@@ -87,11 +87,26 @@ header {
         display: none;
     }
 
+    .container {
+        display: flex; /* Make the container a flex container */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        justify-content: center;
+    }
+
     .me {
         max-width: 70%;
         margin-top: 2rem;
         border-radius: 6rem 6rem 0 0;
         padding-top: 2.5rem;
+    }
+
+    .cta {
+        order: 2;
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        gap: 1rem; /* Add some spacing between the stacked items */
+        align-items: center; /* Center items horizontally */
     }
 
 }
