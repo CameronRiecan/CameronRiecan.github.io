@@ -25,17 +25,17 @@ const data = [
   {
     avatar: AVTR2 ,
     name: "Bachelor of Arts, Political Science",
-    review: 'Fordham College at Lincoln Center (Fordham University) in New York, NY, USA.'
+    review: 'Fordham College at Lincoln Center (Fordham University) in New York, NY, USA'
   },
   {
     avatar: AVTR3,
-    name: "Person 3",
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quod nam impedit soluta odio possimus!'
+    name: "Juris Doctorate",
+    review: 'Seattle University School of Law in Seattle, WA, USA'
   },
   {
     avatar: AVTR4,
-    name: "Person 4",
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quod nam impedit soluta odio possimus!'
+    name: "Juris Doctorate",
+    review: 'olor sit amet consectetur adipisicing elit. Iusto quod nam impedit soluta odio possimus!'
   }
 ]
 
