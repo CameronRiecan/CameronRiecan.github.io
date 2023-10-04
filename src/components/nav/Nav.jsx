@@ -24,13 +24,45 @@ const Nav = () => {
         scrollToTop();
       }}
       className={activeNav === '#top' ? 'active' : ''}
+      role="link"
+      aria-label='Home'
       >
-        <AiOutlineHome />
+        <AiOutlineHome aria-hidden='true'/>
       </a>
-      <a href='#about' onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser /></a>
-      <a href='#experience' onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><BiBook /></a>
-      <a href='#services' onClick={() => setActiveNav('#services')} className={activeNav === '#services' ? 'active' : ''}><RiServiceLine /></a>
-      <a href='#contact' onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><BiMessageSquareDetail /></a>
+      <a
+        href='#about'
+        onClick={() => setActiveNav('#about')}
+        className={activeNav === '#about' ? 'active' : ''}
+        role='link'
+        aria-label='About'
+      >
+        <AiOutlineUser aria-hidden='true' />
+      </a>
+      <a
+        href='#experience'
+        onClick={() => setActiveNav('#experience')}
+        className={activeNav === '#experience' ? 'active' : ''}
+        role='link'
+        aria-label='Experience'
+      >
+        <BiBook aria-hidden='true' />
+      </a>
+      <a
+        href='#services'
+        onClick={() => setActiveNav('#services')}
+        className={activeNav === '#services' ? 'active' : ''}
+        role='link'
+        aria-lang='Services'
+      >
+        <RiServiceLine aria-hidden='true' />
+      </a>
+      <a
+        href='#contact'
+        onClick={() => setActiveNav('#contact')}
+        className={activeNav === '#contact' ? 'active' : ''}
+      >
+        <BiMessageSquareDetail aria-hidden='true' />
+      </a>
     </nav>
   )
 }
