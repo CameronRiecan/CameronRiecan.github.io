@@ -45,7 +45,7 @@ const Testimonials = () => {
       <h5>Review from clients</h5>
       <h2>Testimonials</h2>
 
-      <Swiper className="container testimonials_container row-container"
+      <Swiper className="container testimonials_container"
       modules={[Navigation, Pagination]}
       spaceBetween={40}
       loop={true}
