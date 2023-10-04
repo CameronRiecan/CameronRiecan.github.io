@@ -1,74 +1,54 @@
-# Portfolio Website for Cameron Riecan
+# Cameron Riecan Portfolio Website
 
-This is a portfolio react app website project created by Cameron Riecan. This project uses React js, Swipper js, Mail js, and react-icons.
+Welcome to Cameron Riecan's Portfolio, a showcase of my work as a frontend web developer.
 
-## Getting Started with Create React App
+## Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This portfolio website is built using React.js and adheres to web best practices. I also use Swipper js, Mail js, and react-icons. It includes various components to highlight my skills and achievements, making it easier for potential employers to get to know me and my work. Or anyone else who wants to see what I am up to in the world of web development.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **About Me**: Learn more about my background and interests.
+- **Experience**: Explore my professional journey and achievements.
+- **Services**: Discover the web design and development services I offer.
+- **Portfolio**: View a collection of my recent web development projects.
+- **Achievements and Certifcates**: Read about my certifications and achievements.
+- **Contact**: Get in touch with me via email, LinkedIn, or Instagram.
 
-### `npm start`
+## Accessibility
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- The website is designed with accessibility in mind, with ARIA attributes and semantic HTML to ensure compatibility with screen readers and assistive technologies.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage / Getting Started
 
-### `npm test`
+To run this project locally, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone this repository.
+2. Run `npm install` to install the required dependencies.
+3. Run `npm start` to start the development server.
+4. Open your browser and navigate to `http://localhost:3000` to view the portfolio.
 
-### `npm run build`
+## Contributing
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I'm a firm believer in the power of open source and collaboration. Contributions from the community are not only welcome but highly encouraged! If you share my enthusiasm for creating exceptional web experiences and want to contribute to this project, here's how you can help:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Bug Reports**: If you encounter any issues while using the portfolio, please [open an issue](https://github.com/CameronRiecan/cameronriecan.github.io/issues) on GitHub. Be sure to provide as much detail as possible so that I can quickly address the problem.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Feature Requests**: Have an idea for a new feature or improvement? Feel free to [open an issue](https://github.com/CameronRiecan/cameronriecan.github.io/issues) with your suggestions. Your feedback is invaluable in making this portfolio even better.
 
-### `npm run eject`
+- **Pull Requests**: If you're a developer and would like to contribute directly, fork this repository, make your changes, and submit a pull request. I'm excited to see what creative additions or improvements you can bring to the table.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Open source fosters innovation, collaboration, and learning. By contributing to this project, you're not only helping me but also advancing the open source community. Together, we can create exceptional web experiences and make the web a better place for everyone.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Thank you for considering contributing to this project. Your support is greatly appreciated!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## License
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Learn More
+## Contact
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [Email](mailto:camriecan@gmail.com)
+- [LinkedIn](https://www.linkedin.com/in/cameron-riecan)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for visiting my portfolio. I hope you enjoy exploring my work!
