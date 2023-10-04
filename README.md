@@ -44,8 +44,6 @@ Thank you for considering contributing to this project. Your support is greatly 
 
 ## License
 
-## License
-
 This project is licensed under the [MIT License](LICENSE) - see the [LICENSE](LICENSE) file for details.
 
 
