@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6caca9e7.css",
-    "main.js": "/static/js/main.17ff44e5.js",
+    "main.css": "/static/css/main.30feafdb.css",
+    "main.js": "/static/js/main.96561458.js",
     "static/media/me.png": "/static/media/me.b688c4ae5523271b7e64.png",
     "static/media/me-about.jpg": "/static/media/me-about.7135b48142812830332a.jpg",
     "static/media/Cameron_Riecan_CV.pdf": "/static/media/Cameron_Riecan_CV.0597cf5cff31a0ff5ed6.pdf",
@@ -12,11 +12,11 @@
     "static/media/portfolio4.jpg": "/static/media/portfolio4.5250376b77dc30a7145e.jpg",
     "static/media/portfolio1.jpg": "/static/media/portfolio1.41ef2ff8288ecab6ff6d.jpg",
     "index.html": "/index.html",
-    "main.6caca9e7.css.map": "/static/css/main.6caca9e7.css.map",
-    "main.17ff44e5.js.map": "/static/js/main.17ff44e5.js.map"
+    "main.30feafdb.css.map": "/static/css/main.30feafdb.css.map",
+    "main.96561458.js.map": "/static/js/main.96561458.js.map"
   },
   "entrypoints": [
-    "static/css/main.6caca9e7.css",
-    "static/js/main.17ff44e5.js"
+    "static/css/main.30feafdb.css",
+    "static/js/main.96561458.js"
   ]
 }
