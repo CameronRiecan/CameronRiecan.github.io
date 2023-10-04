@@ -17,10 +17,12 @@ const Footer = () => {
 
   return (
     <footer>
-      <a href='#top' onClick={scrollToTop} className='footer_logo'>Cameron Riecan</a>
+      <a href='#top' onClick={scrollToTop} className='footer_logo'>
+        Cameron Riecan
+      </a>
 
       <ul className='permalinks'>
-        <li><a href='#top' onClick={scrollToTop}>Home</a></li>
+        <li><a href='#top' onClick={scrollToTop}>Back To Top</a></li>
         <li><a href='#about'>About</a></li>
         <li><a href='#experiences'>Experience</a></li>
         <li><a href='#services'>Services</a></li>
@@ -30,9 +32,30 @@ const Footer = () => {
       </ul>
 
       <div className='footer_socials'>
-        <a href='https://www.linkedin.com/in/cameron-riecan/' target='_blank' rel='noreferrer'><BsLinkedin /></a>
-        <a href='https://github.com/CameronRiecan' target='_blank' rel='noreferrer'><FaGithub /></a>
-        <a href='https://www.instagram.com/cameronriecan/' target='_blank' rel='noreferrer'><BsInstagram /></a>
+        <a
+          href='https://www.linkedin.com/in/cameron-riecan/'
+          target='_blank'
+          rel='noreferrer'
+          aria-label='LinkedIn'
+        >
+          <BsLinkedin alt='LinkedIn' />
+        </a>
+        <a
+          href='https://github.com/CameronRiecan'
+          target='_blank'
+          rel='noreferrer'
+          aria-label='GitHub'
+        >
+          <FaGithub alt='GitHub' />
+        </a>
+        <a
+          href='https://www.instagram.com/cameronriecan/'
+          target='_blank'
+          rel='noreferrer'
+          aria-label='Instagram'
+        >
+          <BsInstagram alt='Instagram' />
+        </a>
       </div>
 
       <div className="footer_copyright">
