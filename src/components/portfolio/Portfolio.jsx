@@ -27,14 +27,14 @@ const data = [
     image: IMG3,
     title: 'Reserve a Restaurant Table React App',
     github: 'https://github.com/CameronRiecan/ll_restaurant_webapp',
-    demo: 'https://dribble.com'
+    demo: 'https://cameronriecan.github.io/ll_restaurant_webapp/'
   },
   {
     id: 4,
     image: IMG4,
-    title: 'Project Title 4',
-    github: 'https://github.com/CameronRiecan',
-    demo: 'https://dribble.com'
+    title: 'Currency Field React App',
+    github: 'https://github.com/CameronRiecan/currency-field-app',
+    demo: 'https://cameronriecan.github.io/currency-field-app/'
   },
   {
     id: 5,
