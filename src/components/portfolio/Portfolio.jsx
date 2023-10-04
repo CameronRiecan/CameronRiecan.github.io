@@ -25,7 +25,7 @@ const data = [
   {
     id: 3,
     image: IMG3,
-    title: 'Reserve a Restaurant Table React App',
+    title: 'Reserve a Table React App',
     github: 'https://github.com/CameronRiecan/ll_restaurant_webapp',
     demo: 'https://cameronriecan.github.io/ll_restaurant_webapp/'
   },
