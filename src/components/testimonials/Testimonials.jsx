@@ -34,8 +34,8 @@ const data = [
   },
   {
     avatar: AVTR4,
-    name: "Juris Doctorate",
-    review: 'olor sit amet consectetur adipisicing elit. Iusto quod nam impedit soluta odio possimus!'
+    name: "More to Come!",
+    review: 'Continuing education is one of my passions and I am always learning new things'
   }
 ]
 
