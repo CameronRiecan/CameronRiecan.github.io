@@ -19,13 +19,13 @@ import 'swiper/css/scrollbar';
 const data = [
   {
     avatar: AVTR1,
-    name: "Person 1",
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quod nam impedit soluta odio possimus!'
+    name: "Meta Front-End Developer Specialization",
+    review: 'A 9 course Certificate from Meta and Coursera'
   },
   {
     avatar: AVTR2 ,
-    name: "Person 2",
-    review: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto quod nam impedit soluta odio possimus!'
+    name: "Bachelor of Arts, Political Science",
+    review: 'Fordham College at Lincoln Center (Fordham University) in New York, NY, USA.'
   },
   {
     avatar: AVTR3,
@@ -42,8 +42,8 @@ const data = [
 const Testimonials = () => {
   return (
     <section id='testimonials'>
-      <h5>Review from clients</h5>
-      <h2>Testimonials</h2>
+      <h5>What I've Done</h5>
+      <h2>Achievements & Certifications</h2>
 
       <Swiper className="container testimonials_container"
       modules={[Navigation, Pagination]}
