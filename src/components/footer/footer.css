@@ -50,9 +50,9 @@ footer a {
 }
 
 .footer_socials a:hover {
-    background: transparent;
+    background: var(--color-white);
     color: var(--color-bg);
-    border-color: var(--color-bg);
+    border-color: var(--color-white);
 }
 
 .footer_copyright {
