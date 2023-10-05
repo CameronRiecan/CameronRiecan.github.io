@@ -44,7 +44,8 @@ const DarkModeToggle = () => {
     }, [isDarkMode]);
 
     // toggle for theme dark mode
-    const toggleDarkMode = () => {
+    const toggleDarkMode = (e) => {
+        e.preventDefault(); // Prevent the default behavior of a tag scrolling to the top
         setIsDarkMode(!isDarkMode);
       };
 
