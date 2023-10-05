@@ -1,7 +1,13 @@
 /* Footer Component CSS */
+:root {
+    --color-footer-bg-light: #4db5ff;
+    --color-footer-bg-dark: #1a1a1a;
+    --color-footer-light: #1f1f38;
+    --color-footer-dark: #4db5ff;
+  }
 
 footer {
-    background: var(--color-primary);
+    background: var(--color-footer-bg);
     padding: 3rem 0;
     text-align: center;
     font-size: 0.9rem;
@@ -9,7 +15,7 @@ footer {
 }
 
 footer a {
-    color: var(--color-bg);
+    color: var(--color-footer);
 }
 
 .footer_logo {
@@ -51,7 +57,7 @@ footer a {
 
 .footer_copyright {
     margin-bottom: 4.5rem;
-    color: var(--color-bg);
+    color: var(--color-footer);
 }
 
 

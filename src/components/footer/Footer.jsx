@@ -4,7 +4,7 @@ import {BsLinkedin} from 'react-icons/bs'
 import {FaGithub} from 'react-icons/fa'
 import {BsInstagram} from 'react-icons/bs'
 
-const Footer = () => {
+const Footer = ({ isDarkMode }) => {
   const scrollToTop = () => {
     window.scrollTo({
       top:0,
@@ -58,7 +58,7 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className="footer_copyright">
+      <div className='footer_copyright'>
         <small>&copy; {theYear} Cameron Riecan. All rights reserved.</small>
       </div>
     </footer>
