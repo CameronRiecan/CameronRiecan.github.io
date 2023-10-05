@@ -24,6 +24,14 @@
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.6);
 
+    /* Dark mode color variables */
+    --color-bg-dark: #121212;
+    --color-bg-variant-dark: #1a1a1a;
+    --color-primary-dark: #4db5ff;
+    --color-primary-variant-dark: rgba(77, 181, 255, 0.4);
+    --color-white-dark: #fff;
+    --color-light-dark: rgba(255, 255, 255, 0.6);
+
     /* Transition variable */
     --transition: all 400ms ease;
 
@@ -124,6 +132,12 @@ img {
     display: block;
     width: 100%;
     object-fit: cover;
+}
+
+/* Toggle dark mode styles */
+body.dark-mode {
+    background: var(--color-bg-dark);
+    color: var(--color-primary-dark);
 }
 
 /* Media Queries (Medium Devices) */
