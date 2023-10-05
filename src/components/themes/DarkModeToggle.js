@@ -49,11 +49,11 @@ const DarkModeToggle = () => {
       };
 
   return (
-    <div className='dark-mode-toggle'>
         <a
-          href='#top'
+          href='#'
           onClick={toggleDarkMode}
-          className='theme-icon'
+          role='link'
+          aria-label={isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
       >
         {isDarkMode ? (
           <MdOutlineLightMode aria-label="Light Mode" />
@@ -61,7 +61,6 @@ const DarkModeToggle = () => {
           <MdDarkMode aria-label="Dark Mode" />
         )}
       </a>
-    </div>
   );
 };
 
