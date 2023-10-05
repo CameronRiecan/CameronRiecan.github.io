@@ -1,5 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import { MdOutlineLightMode, MdDarkMode } from 'react-icons/md';
+
 
 const DarkModeToggle = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
@@ -13,6 +15,7 @@ const DarkModeToggle = () => {
     useEffect(() => {
         // Update the CSS variables base on dark mode state
         const root = document.documentElement;
+        const body = document.body;
 
         if (isDarkMode) {
             // Dark mode variables
@@ -22,14 +25,18 @@ const DarkModeToggle = () => {
             root.style.setProperty('--color-primary-variant', 'rgba(77, 181, 255, 0.4)');
             root.style.setProperty('--color-white', '#fff');
             root.style.setProperty('--color-light', 'rgba(255, 255, 255, 0.6)');
+            // Remove the background image
+            body.classList.add('dark-mode');
         } else {
-            // Light mode variables (you can define these as needed)
-            root.style.setProperty('--color-bg', 'var(--color-bg-light)');
-            root.style.setProperty('--color-bg-variant', 'var(--color-bg-variant-light)');
-            root.style.setProperty('--color-primary', 'var(--color-primary-light)');
-            root.style.setProperty('--color-primary-variant', 'var(--color-primary-variant-light)');
-            root.style.setProperty('--color-white', 'var(--color-white-light)');
-            root.style.setProperty('--color-light', 'var(--color-light-light)');
+             // Light mode variables (reset to your original values)
+             root.style.setProperty('--color-bg', '#1f1f38');
+             root.style.setProperty('--color-bg-variant', '#2c2c6c');
+             root.style.setProperty('--color-primary', '#4db5ff');
+             root.style.setProperty('--color-primary-variant', 'rgba(77, 181, 255, 0.4)');
+             root.style.setProperty('--color-white', '#fff');
+             root.style.setProperty('--color-light', 'rgba(255, 255, 255, 0.6)');
+            // Restore the background image
+            body.classList.remove('dark-mode');
         }
 
         // Store dark mode peference in local storage
@@ -43,10 +50,17 @@ const DarkModeToggle = () => {
 
   return (
     <div className='dark-mode-toggle'>
-        <label className='switch'>
-            <input type='checkbox' checked={isDarkMode} onChange={toggleDarkMode} />
-            <span className='slider round'></span>
-        </label>   DarkModeToggle
+        <a
+          href='#top'
+          onClick={toggleDarkMode}
+          className='theme-icon'
+      >
+        {isDarkMode ? (
+          <MdOutlineLightMode aria-label="Light Mode" />
+        ) : (
+          <MdDarkMode aria-label="Dark Mode" />
+        )}
+      </a>
     </div>
   );
 };
