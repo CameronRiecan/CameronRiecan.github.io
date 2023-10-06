@@ -31,16 +31,16 @@ const DarkModeToggle = () => {
             // Remove the background image
             body.classList.add('dark-mode');
         } else {
-             // Light mode variables (reset to your original values)
-             root.style.setProperty('--color-bg', '#1f1f38');
-             root.style.setProperty('--color-bg-variant', '#2c2c6c');
-             root.style.setProperty('--color-primary', '#4db5ff');
-             root.style.setProperty('--color-primary-variant', 'rgba(77, 181, 255, 0.4)');
-             root.style.setProperty('--color-white', '#fff');
-             root.style.setProperty('--color-light', 'rgba(255, 255, 255, 0.6)');
-             // Update footer background color to light
+            // Light mode variables (reset to your original values)
+            root.style.setProperty('--color-bg', '#1f1f38');
+            root.style.setProperty('--color-bg-variant', '#2c2c6c');
+            root.style.setProperty('--color-primary', '#4db5ff');
+            root.style.setProperty('--color-primary-variant', 'rgba(77, 181, 255, 0.4)');
+            root.style.setProperty('--color-white', '#fff');
+            root.style.setProperty('--color-light', 'rgba(255, 255, 255, 0.6)');
+            // Update footer background color to light
             root.style.setProperty('--color-footer-bg', 'var(--color-footer-bg-light)');
-            root.style.setProperty('--color-footer', 'var(--color-footer-light)');
+            root.style.setProperty('--color-footer-bg', 'var(--color-footer-light)');
             // Restore the background image
             body.classList.remove('dark-mode');
         }

@@ -54,7 +54,7 @@ body {
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
-    background-image: url(../src/assets/bg-texture.png);
+    /* background-image: url(../src/assets/bg-texture.png); */
 }
 
  /* GENERAL STYLES */
@@ -138,6 +138,7 @@ img {
 body.dark-mode {
     background: var(--color-bg-dark);
     color: var(--color-primary-dark);
+    transition: background-color 0.4s ease;
 }
 
 /* Media Queries (Medium Devices) */
