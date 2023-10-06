@@ -111,6 +111,13 @@ const Experience = () => {
                 <small className='text-light' aria-label="Experience Level: Beginner/Intermediate">Beginner/Intermediate</small>
               </div>
             </article>
+            <article className='experience_details'>
+              <BsPatchCheckFill className='experience_details-icon' aria-hidden='true' />
+              <div>
+                <h4>Node.js</h4>
+                <small className='text-light' aria-label="Experience Level: Beginner/Intermediate">Beginner/Intermediate</small>
+              </div>
+            </article>
           </div>
         </div>
       </div>
