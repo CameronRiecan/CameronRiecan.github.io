@@ -144,7 +144,7 @@ body.dark-mode {
 
 /* Apply filter to images in dark mode */
 body.dark-mode img {
-    filter: brightness(70%); /* Adjust the percentage to control the darkness */
+    filter: brightness(85%); /* Adjust the percentage to control the darkness, closer to 100% is normal brightness, lower percentage goes darker */
 }
 
 /* Media Queries (Medium Devices) */
