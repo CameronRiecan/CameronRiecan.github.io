@@ -39,9 +39,9 @@ const data = [
   {
     id: 5,
     image: IMG5,
-    title: 'Project Coming Soon...',
-    github: '', //Empty URL
-    demo: '' //Empty URL
+    title: 'To Do List App',
+    github: 'https://github.com/CameronRiecan/To-Do-List',
+    demo: 'https://cameronriecan.github.io/To-Do-List/'
   },
   {
     id: 6,
