@@ -16,7 +16,7 @@ const Footer = ({ isDarkMode }) => {
   let theYear = currentYear.getFullYear();
 
   return (
-    <footer>
+    <footer className={isDarkMode ? 'dark-mode' : 'light-mode'}>
       <a href='#top' onClick={scrollToTop} className='footer_logo'>
         Cameron Riecan
       </a>

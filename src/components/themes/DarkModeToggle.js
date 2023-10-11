@@ -13,11 +13,10 @@ const DarkModeToggle = () => {
     }, []);
 
     useEffect(() => {
-      // Apply the 'dark-mode' class to the body when dark mode is enabled
       if (isDarkMode) {
-          document.body.classList.add('dark-mode');
+          document.documentElement.classList.add('dark-mode'); // Apply 'dark-mode' to :root
       } else {
-          document.body.classList.remove('dark-mode');
+          document.documentElement.classList.remove('dark-mode'); // Remove 'dark-mode' from :root
       }
 
         // Store dark mode peference in local storage
@@ -28,6 +27,13 @@ const DarkModeToggle = () => {
     const toggleDarkMode = (e) => {
         e.preventDefault(); // Prevent the default behavior of a tag scrolling to the top
         setIsDarkMode(!isDarkMode);
+
+         // Apply or remove the light mode class
+        if (isDarkMode) {
+        document.documentElement.classList.remove('light-mode');
+        } else {
+        document.documentElement.classList.add('light-mode');
+        }
       };
 
   return (

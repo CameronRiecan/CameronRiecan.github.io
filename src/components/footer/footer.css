@@ -1,21 +1,22 @@
 /* Footer Component CSS */
+
 /* CSS Variables for Light Mode */
-:root {
-    --color-bg: #1f1f38;
-    --color-footer-bg: #4db5ff;
-    --color-footer: #ffffff;
+:root.light-mode footer {
+    --color-bg: #2c2c6c;
+    --color-footer-bg: #fff;
+    --color-footer-text: #ffffff;
     --color-footer-light-hover: #4db5ff;
-    /* ...other variables... */
 }
 
 /* CSS Variables for Dark Mode */
-:root.dark-mode {
+:root.dark-mode footer {
     --color-bg: #121212;
-    --color-footer-bg: #1a1a1a;
-    --color-footer: #4db5ff;
-    --color-footer-light-hover: #4db5ff;
-    /* ...other variables... */
+    --color-footer-bg: #222222;
+    --color-footer-text: #4db5ff;
+    --color-footer-light-hover: #ffffff;
 }
+
+/* Common Styles */
 
 footer {
     background: var(--color-footer-bg);
@@ -23,11 +24,11 @@ footer {
     text-align: center;
     font-size: 0.9rem;
     margin-top: 6rem;
-    color: var(--color-footer);
+    color: var(--color-footer-text);
 }
 
 footer a {
-    color: var(--color-footer);
+    color: var(--color-footer-text);
     transition: color 0.4s ease; /* Transition for text color */
 }
 
@@ -59,8 +60,8 @@ footer a:hover {
 }
 
 .footer_socials a {
-    background: var(--color-footer);
-    color: var(--color-white);
+    background: var(--color-footer-bg);
+    color: var(--color-footer-text);
     padding: 0.8rem;
     border-radius: 0.7rem;
     display: flex;
@@ -68,14 +69,14 @@ footer a:hover {
 }
 
 .footer_socials a:hover {
-    background: var(--color-white);
-    color: var(--color-bg);
-    border-color: var(--color-white);
+    background: var(--color-footer-light-hover);
+    color: var(--color-footer-text);
+    border-color: var(--color-footer-light-hover);
 }
 
 .footer_copyright {
     margin-bottom: 4.5rem;
-    color: var(--color-footer);
+    color: var(--color-footer-text);
 }
 
 
