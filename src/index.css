@@ -53,7 +53,28 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Scrollbar Styles */
 
+::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  /* Style for the scrollbar thumb (the draggable part) */
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-primary-variant);
+    border-radius: 10px;
+  }
+
+  /* Style for the scrollbar track */
+  ::-webkit-scrollbar-track {
+    background: var(--color-bg-variant);
+    border: 1px solid black;
+  }
+
+  /* Style for the scrollbar buttons (the arrows at the ends) */
+  ::-webkit-scrollbar-button {
+    display: none; /* Hide the scrollbar buttons */
+  }
 
 body {
     font-family: 'Poppins', sans-serif;
