@@ -1,21 +1,5 @@
 /* Footer Component CSS */
 
-/* CSS Variables for Light Mode */
-:root.light-mode footer {
-    --color-bg: #2c2c6c;
-    --color-footer-bg: #fff;
-    --color-footer-text: #ffffff;
-    --color-footer-light-hover: #4db5ff;
-}
-
-/* CSS Variables for Dark Mode */
-:root.dark-mode footer {
-    --color-bg: #121212;
-    --color-footer-bg: #222222;
-    --color-footer-text: #4db5ff;
-    --color-footer-light-hover: #ffffff;
-}
-
 /* Common Styles */
 
 footer {

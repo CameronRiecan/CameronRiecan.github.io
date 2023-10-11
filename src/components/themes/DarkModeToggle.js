@@ -28,11 +28,14 @@ const DarkModeToggle = () => {
         e.preventDefault(); // Prevent the default behavior of a tag scrolling to the top
         setIsDarkMode(!isDarkMode);
 
-         // Apply or remove the light mode class
         if (isDarkMode) {
-        document.documentElement.classList.remove('light-mode');
-        } else {
-        document.documentElement.classList.add('light-mode');
+          // Apply dark mode
+          document.documentElement.classList.remove('light-mode');
+          document.documentElement.classList.add('dark-mode');
+         } else {
+          // Apply light mode
+          document.documentElement.classList.remove('dark-mode');
+          document.documentElement.classList.add('light-mode');
         }
       };
 

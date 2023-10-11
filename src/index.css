@@ -23,14 +23,9 @@
     --color-primary-variant: rgba(77, 181, 255, 0.4);
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.6);
-
-    /* Dark mode color variables */
-    --color-bg-dark: #121212;
-    --color-bg-variant-dark: #1a1a1a;
-    --color-primary-dark: #4db5ff;
-    --color-primary-variant-dark: rgba(77, 181, 255, 0.4);
-    --color-white-dark: #fff;
-    --color-light-dark: rgba(255, 255, 255, 0.6);
+    --color-footer-bg: #2c2c6c;
+    --color-footer-text: #ffffff;
+    --color-footer-light-hover: #4db5ff;
 
     /* Transition variable */
     --transition: all 400ms ease;
@@ -41,21 +36,19 @@
     --container-width-sm: 90%;
 }
 
-/* CSS Variables for Light Mode to target Footer */
-.light-mode footer {
-    --color-bg: #2c2c6c;
-    --color-footer-bg: #fff;
-    --color-footer-text: #ffffff;
-    --color-footer-light-hover: #4db5ff;
-}
 
-/* CSS Variables for Dark Mode to target Footer */
-.dark-mode footer {
+/* CSS Variables for Dark Mode */
+:root.dark-mode {
     --color-bg: #121212;
+    --color-bg-variant: #1a1a1a;
+    --color-primary: #4db5ff;
+    --color-primary-variant: rgba(77, 181, 255, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.6);
     --color-footer-bg: #222222;
     --color-footer-text: #4db5ff;
     --color-footer-light-hover: #ffffff;
-}
+  }
 
 html {
     scroll-behavior: smooth;
@@ -152,15 +145,16 @@ img {
 }
 
 /* Toggle dark mode styles */
-body.dark-mode {
+
+.dark-mode {
     background: var(--color-bg-dark);
     color: var(--color-primary-dark);
     transition: background-color 0.4s ease;
 }
 
 /* Apply filter to images in dark mode */
-body.dark-mode img {
-    filter: brightness(85%); /* Adjust the percentage to control the darkness, closer to 100% is normal brightness, lower percentage goes darker */
+.dark-mode img {
+    filter: brightness(90%); /* Adjust the percentage to control the darkness, closer to 100% is normal brightness, lower percentage goes darker */
 }
 
 /* Media Queries (Medium Devices) */
