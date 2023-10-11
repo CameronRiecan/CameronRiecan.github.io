@@ -1,10 +1,21 @@
 /* Footer Component CSS */
+/* CSS Variables for Light Mode */
 :root {
-    --color-footer-bg-light: #4db5ff;
-    --color-footer-bg-dark: #1a1a1a;
-    --color-footer-light: #1f1f38;
-    --color-footer-dark: #4db5ff;
-  }
+    --color-bg: #1f1f38;
+    --color-footer-bg: #4db5ff;
+    --color-footer: #ffffff;
+    --color-footer-light-hover: #4db5ff;
+    /* ...other variables... */
+}
+
+/* CSS Variables for Dark Mode */
+:root.dark-mode {
+    --color-bg: #121212;
+    --color-footer-bg: #1a1a1a;
+    --color-footer: #4db5ff;
+    --color-footer-light-hover: #4db5ff;
+    /* ...other variables... */
+}
 
 footer {
     background: var(--color-footer-bg);
@@ -12,10 +23,17 @@ footer {
     text-align: center;
     font-size: 0.9rem;
     margin-top: 6rem;
+    color: var(--color-footer);
 }
 
 footer a {
     color: var(--color-footer);
+    transition: color 0.4s ease; /* Transition for text color */
+}
+
+/* Hover effect for links */
+footer a:hover {
+    color: var(--color-footer-light-hover); /* Blue for both light and dark mode on hover */
 }
 
 .footer_logo {

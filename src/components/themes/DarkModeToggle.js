@@ -13,37 +13,12 @@ const DarkModeToggle = () => {
     }, []);
 
     useEffect(() => {
-        // Update the CSS variables base on dark mode state
-        const root = document.documentElement;
-        const body = document.body;
-
-        if (isDarkMode) {
-            // Dark mode variables
-            root.style.setProperty('--color-bg', '#121212');
-            root.style.setProperty('--color-bg-variant', '#1a1a1a');
-            root.style.setProperty('--color-primary', '#4db5ff');
-            root.style.setProperty('--color-primary-variant', 'rgba(77, 181, 255, 0.4)');
-            root.style.setProperty('--color-white', '#fff');
-            root.style.setProperty('--color-light', 'rgba(255, 255, 255, 0.6)');
-            // Update footer background color to dark
-            root.style.setProperty('--color-footer-bg', 'var(--color-footer-bg-dark)');
-            root.style.setProperty('--color-footer', 'var(--color-footer-dark)');
-            // Remove the background image
-            body.classList.add('dark-mode');
-        } else {
-            // Light mode variables (reset to your original values)
-            root.style.setProperty('--color-bg', '#1f1f38');
-            root.style.setProperty('--color-bg-variant', '#2c2c6c');
-            root.style.setProperty('--color-primary', '#4db5ff');
-            root.style.setProperty('--color-primary-variant', 'rgba(77, 181, 255, 0.4)');
-            root.style.setProperty('--color-white', '#fff');
-            root.style.setProperty('--color-light', 'rgba(255, 255, 255, 0.6)');
-            // Update footer background color to light
-            root.style.setProperty('--color-footer-bg', 'var(--color-footer-bg-light)');
-            root.style.setProperty('--color-footer-bg', 'var(--color-footer-light)');
-            // Restore the background image
-            body.classList.remove('dark-mode');
-        }
+      // Apply the 'dark-mode' class to the body when dark mode is enabled
+      if (isDarkMode) {
+          document.body.classList.add('dark-mode');
+      } else {
+          document.body.classList.remove('dark-mode');
+      }
 
         // Store dark mode peference in local storage
         localStorage.setItem('darkMode', isDarkMode);
