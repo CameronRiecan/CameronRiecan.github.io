@@ -36,7 +36,6 @@
     --container-width-sm: 90%;
 }
 
-
 /* CSS Variables for Dark Mode */
 :root.dark-mode {
     --color-bg: #121212;
@@ -54,9 +53,7 @@ html {
     scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
+
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -159,6 +156,10 @@ img {
 
 /* Media Queries (Medium Devices) */
 @media screen and (max-width: 1024px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
     .container {
         width: var(--container-width-md);
     }
