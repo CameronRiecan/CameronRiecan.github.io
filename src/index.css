@@ -90,6 +90,18 @@ html {
     border-radius: 10px;
 }
 
+/* For Microsoft Edge */
+* {
+    -ms-overflow-style: none; /* Hide the scrollbar (if you don't want to show it) */
+    scrollbar-width: thin; /* Show a thin scrollbar (you can adjust 'thin' to 'auto' or 'none' based on your preference) */
+}
+
+/* The scrollbar track (background) for Microsoft Edge */
+*::-webkit-scrollbar-track {
+    background: var(--color-bg-variant);
+    border: 1px solid black;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background: var(--color-bg);
