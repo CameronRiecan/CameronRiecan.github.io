@@ -55,26 +55,40 @@ html {
 
 /* Scrollbar Styles */
 
+/* For WebKit (Chrome, Safari) */
+
 ::-webkit-scrollbar {
     width: 12px;
-  }
+}
 
-  /* Style for the scrollbar thumb (the draggable part) */
-  ::-webkit-scrollbar-thumb {
+/* Style for the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
     background: var(--color-primary-variant);
     border-radius: 10px;
-  }
+}
 
-  /* Style for the scrollbar track */
-  ::-webkit-scrollbar-track {
+/* Style for the scrollbar track */
+::-webkit-scrollbar-track {
     background: var(--color-bg-variant);
     border: 1px solid black;
-  }
+}
 
-  /* Style for the scrollbar buttons (the arrows at the ends) */
-  ::-webkit-scrollbar-button {
+/* Style for the scrollbar buttons (the arrows at the ends) */
+::-webkit-scrollbar-button {
     display: none; /* Hide the scrollbar buttons */
-  }
+}
+
+/* For Firefox */
+/* The scrollbar track (background) */
+* {
+    scrollbar-color: var(--color-bg-variant) var(--color-primary-variant);
+}
+
+/* The scrollbar thumb (the draggable part) */
+*::-webkit-scrollbar-thumb {
+    background: var(--color-primary-variant);
+    border-radius: 10px;
+}
 
 body {
     font-family: 'Poppins', sans-serif;
