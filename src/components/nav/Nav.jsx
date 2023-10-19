@@ -15,7 +15,7 @@ const Nav = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    // Add an event listener to handle scrolling
+    // Add an event listener to handle scrolling to highlight icons in nav
     window.addEventListener('scroll', handleScroll);
 
     // Clean up the event listener when the component unmounts
@@ -27,18 +27,21 @@ const Nav = () => {
   const handleScroll = () => {
     // Determine which section is in the viewport based on scroll position
     const scrollPosition = window.scrollY;
+    const viewportHeight = window.innerHeight;
+
     const aboutSection = document.getElementById('about').offsetTop;
     const experienceSection = document.getElementById('experience').offsetTop;
     const servicesSection = document.getElementById('services').offsetTop;
     const contactSection = document.getElementById('contact').offsetTop;
+    const sectionHeight = viewportHeight / 2; //to change icon when at half of screen
 
     if (scrollPosition < aboutSection) {
       setActiveNav('#top');
-    } else if (scrollPosition < experienceSection) {
+    } else if (scrollPosition < experienceSection - sectionHeight) {
       setActiveNav('#about');
-    } else if (scrollPosition < servicesSection) {
+    } else if (scrollPosition < servicesSection - sectionHeight) {
       setActiveNav('#experience');
-    } else if (scrollPosition < contactSection) {
+    } else if (scrollPosition < contactSection - sectionHeight) {
       setActiveNav('#services');
     } else {
       setActiveNav('#contact');
