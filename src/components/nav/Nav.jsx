@@ -35,7 +35,7 @@ const Nav = () => {
     const contactSection = document.getElementById('contact').offsetTop;
     const sectionHeight = viewportHeight / 2; //to change icon when at half of screen
 
-    if (scrollPosition < aboutSection) {
+    if (scrollPosition < aboutSection - sectionHeight) {
       setActiveNav('#top');
     } else if (scrollPosition < experienceSection - sectionHeight) {
       setActiveNav('#about');
