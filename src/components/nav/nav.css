@@ -21,6 +21,26 @@ nav a {
     display: flex;
     color: var(--color-light);
     font-size: 1.1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0.2rem;
+    /* background: var(--color-primary); */
+    transition: left 0.4s;
+}
+
+nav a:hover::before,
+nav a.active::before {
+    left: 100%;
+    transition: left 0.4s;
 }
 
 nav a:hover {
