@@ -6,6 +6,7 @@ import {AiOutlineUser} from 'react-icons/ai'
 import {BiBook} from 'react-icons/bi'
 import {RiServiceLine} from 'react-icons/ri'
 import {BiMessageSquareDetail} from 'react-icons/bi'
+import {AiOutlineFolderOpen} from 'react-icons/ai'
 import {MdOutlineLightMode} from 'react-icons/md'
 import {MdDarkMode} from 'react-icons/md'
 import { useState, useEffect } from 'react'
@@ -97,6 +98,15 @@ const Nav = () => {
         aria-lang='Services'
       >
         <RiServiceLine aria-hidden='true' />
+      </a>
+      <a
+        href='#portfolio'
+        onClick={() => setActiveNav('#portfolio')}
+        className={activeNav === '#portfolio' ? 'active' : ''}
+        role='link'
+        aria-lang='Portfolio'
+      >
+        <AiOutlineFolderOpen aria-hidden='true' />
       </a>
       <a
         href='#contact'
