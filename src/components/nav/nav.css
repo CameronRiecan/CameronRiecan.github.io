@@ -33,7 +33,6 @@ nav a::before {
     transform: translate(-50%, -50%);
     width: 0;
     height: 0.2rem;
-    /* background: var(--color-primary); */
     transition: left 0.4s;
 }
 
