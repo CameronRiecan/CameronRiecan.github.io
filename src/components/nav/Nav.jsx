@@ -98,7 +98,7 @@ const Nav = () => {
         onClick={() => setActiveNav('#services')}
         className={activeNav === '#services' ? 'active' : ''}
         role='link'
-        aria-lang='Services'
+        aria-label='Services'
       >
         <RiServiceLine aria-hidden='true' />
       </a>
@@ -107,7 +107,7 @@ const Nav = () => {
         onClick={() => setActiveNav('#portfolio')}
         className={activeNav === '#portfolio' ? 'active' : ''}
         role='link'
-        aria-lang='Portfolio'
+        aria-label='Portfolio'
       >
         <AiOutlineFolderOpen aria-hidden='true' />
       </a>
@@ -115,6 +115,8 @@ const Nav = () => {
         href='#contact'
         onClick={() => setActiveNav('#contact')}
         className={activeNav === '#contact' ? 'active' : ''}
+        role='link'
+        aria-label='Contact'
       >
         <BiMessageSquareDetail aria-hidden='true' />
       </a>
