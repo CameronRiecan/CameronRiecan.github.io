@@ -34,6 +34,7 @@ const Nav = () => {
     const experienceSection = document.getElementById('experience').offsetTop;
     const servicesSection = document.getElementById('services').offsetTop;
     const contactSection = document.getElementById('contact').offsetTop;
+    const portfolioSection = document.getElementById('portfolio').offsetTop;
     const sectionHeight = viewportHeight / 2; //to change icon when at half of screen
 
     if (scrollPosition < aboutSection - sectionHeight) {
@@ -42,8 +43,10 @@ const Nav = () => {
       setActiveNav('#about');
     } else if (scrollPosition < servicesSection - sectionHeight) {
       setActiveNav('#experience');
+    } else if (scrollPosition < portfolioSection - sectionHeight) {
+        setActiveNav('#services');
     } else if (scrollPosition < contactSection - sectionHeight) {
-      setActiveNav('#services');
+      setActiveNav('#portfolio');
     } else {
       setActiveNav('#contact');
     }
