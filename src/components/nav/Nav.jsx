@@ -8,11 +8,42 @@ import {RiServiceLine} from 'react-icons/ri'
 import {BiMessageSquareDetail} from 'react-icons/bi'
 import {MdOutlineLightMode} from 'react-icons/md'
 import {MdDarkMode} from 'react-icons/md'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState('#');
   const [isDarkMode, setIsDarkMode] = useState(false);
+
+  useEffect(() => {
+    // Add an event listener to handle scrolling
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleScroll = () => {
+    // Determine which section is in the viewport based on scroll position
+    const scrollPosition = window.scrollY;
+    const aboutSection = document.getElementById('about').offsetTop;
+    const experienceSection = document.getElementById('experience').offsetTop;
+    const servicesSection = document.getElementById('services').offsetTop;
+    const contactSection = document.getElementById('contact').offsetTop;
+
+    if (scrollPosition < aboutSection) {
+      setActiveNav('#top');
+    } else if (scrollPosition < experienceSection) {
+      setActiveNav('#about');
+    } else if (scrollPosition < servicesSection) {
+      setActiveNav('#experience');
+    } else if (scrollPosition < contactSection) {
+      setActiveNav('#services');
+    } else {
+      setActiveNav('#contact');
+    }
+  };
 
   const scrollToTop = () => {
     window.scrollTo({
