@@ -60,6 +60,10 @@ label {
     font-size: 0.8rem;
 }
 
+.contact_options {
+    justify-content: space-between; /* make sure cards match height of form */
+}
+
 /* Media Queries (Medium Devices) */
 @media screen and (max-width: 1024px) {
     .container.contact_container {
