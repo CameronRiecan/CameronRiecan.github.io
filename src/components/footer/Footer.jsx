@@ -2,7 +2,6 @@ import React from 'react'
 import './footer.css'
 import {BsLinkedin} from 'react-icons/bs'
 import {FaGithub} from 'react-icons/fa'
-import {BsInstagram} from 'react-icons/bs'
 
 const Footer = ({ isDarkMode }) => {
   const scrollToTop = () => {
@@ -47,14 +46,6 @@ const Footer = ({ isDarkMode }) => {
           aria-label='GitHub'
         >
           <FaGithub alt='GitHub' />
-        </a>
-        <a
-          href='https://www.instagram.com/cameronriecan/'
-          target='_blank'
-          rel='noreferrer'
-          aria-label='Instagram'
-        >
-          <BsInstagram alt='Instagram' />
         </a>
       </div>
 
