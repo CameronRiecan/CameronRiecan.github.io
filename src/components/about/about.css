@@ -14,7 +14,7 @@
 }
 
 .about_me {
-    max-width: 700px; /* to stop container from growing too big with responsive UI */
+    max-width: 600px; /* to stop container from growing too big with responsive UI */
     border-radius: 2rem;
     background: linear-gradient(
         45deg,
