@@ -24,15 +24,6 @@ const HeaderSocials = () => {
           <FaGithub aria-hidden='true' />
           <h5 className='sr-only'>Github</h5>
         </a>
-        <a
-          href='https://www.instagram.com/cameronriecan/'
-          target='_blank'
-          rel='noopener noreferrer'
-          aria-label='Instagram'
-        >
-          <BsInstagram aria-hidden='true' />
-          <h5 className='sr-only'>Instagram</h5>
-        </a>
     </div>
   )
 }
