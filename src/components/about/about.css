@@ -80,8 +80,9 @@
 
 .about_content p {
     color: var(--color-light);
-    margin: 1rem 0 1.5rem;
+    margin: 1.2rem 0 1.5rem;
     text-align: left;
+    padding: 0 .5rem;
 }
 
 /* Media Queries (Medium Devices) */
