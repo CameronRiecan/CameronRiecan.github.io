@@ -18,27 +18,34 @@ const data = [
   {
     id: 2,
     image: IMG2,
+    title: 'Language Support Demo React App',
+    github: 'https://github.com/CameronRiecan/language_support',
+    demo: 'https://cameronriecan.github.io/language_support/'
+  },
+  {
+    id: 3,
+    image: IMG3,
     title: 'Calculator React App',
     github: 'https://github.com/CameronRiecan/SimpleCalculatorReactApp',
     demo: 'https://cameronriecan.github.io/SimpleCalculatorReactApp/'
   },
   {
-    id: 3,
-    image: IMG3,
+    id: 4,
+    image: IMG4,
     title: 'Reserve a Table React App',
     github: 'https://github.com/CameronRiecan/ll_restaurant_webapp',
     demo: 'https://cameronriecan.github.io/ll_restaurant_webapp/'
   },
   {
-    id: 4,
-    image: IMG4,
+    id: 5,
+    image: IMG5,
     title: 'Currency Field React App',
     github: 'https://github.com/CameronRiecan/currency-field-app',
     demo: 'https://cameronriecan.github.io/currency-field-app/'
   },
   {
-    id: 5,
-    image: IMG5,
+    id: 6,
+    image: IMG6,
     title: 'To Do List App',
     github: 'https://github.com/CameronRiecan/To-Do-List',
     demo: 'https://cameronriecan.github.io/To-Do-List/'
