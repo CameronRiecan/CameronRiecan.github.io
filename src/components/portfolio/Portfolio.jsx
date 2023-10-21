@@ -18,7 +18,7 @@ const data = [
   {
     id: 2,
     image: IMG2,
-    title: 'Language Support Demo React App',
+    title: 'Language Support React App',
     github: 'https://github.com/CameronRiecan/language_support',
     demo: 'https://cameronriecan.github.io/language_support/'
   },
