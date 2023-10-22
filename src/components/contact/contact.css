@@ -71,6 +71,10 @@ label {
         grid-template-rows: 30% 58%;
         gap: 12%;
     }
+
+    button {
+        margin: 1.3rem auto 0;
+    }
 }
 
 /* Media Queries (Small Devices) */
