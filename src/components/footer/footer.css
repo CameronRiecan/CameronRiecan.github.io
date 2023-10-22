@@ -68,10 +68,10 @@ footer a:hover {
 @media screen and (max-width: 600px) {
     .permalinks {
         flex-direction: column;
-        gap: 1.25rem;
+        gap: 1.15rem;
     }
 
     .footer_socials {
-        margin-bottom: 2.6rem;
+        margin: 1.8rem 0;
     }
 }
