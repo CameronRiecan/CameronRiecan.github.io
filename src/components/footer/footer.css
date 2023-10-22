@@ -67,7 +67,7 @@ footer a:hover {
 /* Media Queries (Small Devices) */
 @media screen and (max-width: 600px) {
     footer {
-        margin-top: 5rem;
+        margin-top: 4.5rem;
         padding-top: 2rem;
     }
     .permalinks {
