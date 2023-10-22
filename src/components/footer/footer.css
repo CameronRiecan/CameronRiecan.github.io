@@ -66,6 +66,10 @@ footer a:hover {
 
 /* Media Queries (Small Devices) */
 @media screen and (max-width: 600px) {
+    footer {
+        margin-top: 5rem;
+        padding-top: 2rem;
+    }
     .permalinks {
         flex-direction: column;
         gap: 1.15rem;
@@ -73,5 +77,9 @@ footer a:hover {
 
     .footer_socials {
         margin: 1.8rem 0;
+    }
+
+    .footer_logo {
+        margin-bottom: 1rem;
     }
 }
