@@ -3,8 +3,8 @@
 .container.contact_container {
     width: 58%;
     display: grid;
-    grid-template-columns: 30% 58%;
-    gap: 12%;
+    grid-template-columns: 32% 58%;
+    gap: 10%;
 }
 
 .contact_options {
@@ -15,7 +15,7 @@
 
 .contact_option {
     background: var(--color-bg-variant);
-    padding: 1.2rem;
+    padding: 1.4rem;
     border-radius: 1.2rem;
     text-align: center;
     border: 1px solid transparent;
@@ -61,14 +61,15 @@ label {
 }
 
 .contact_options {
-    justify-content: space-between; /* make sure cards match height of form */
+    justify-content: space-evenly; /* make sure cards match height of form */
 }
 
 /* Media Queries (Medium Devices) */
 @media screen and (max-width: 1024px) {
     .container.contact_container {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        grid-template-rows: 30% 58%;
+        gap: 12%;
     }
 }
 
