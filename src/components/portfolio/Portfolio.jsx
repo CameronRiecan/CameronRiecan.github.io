@@ -51,7 +51,7 @@ const data = [
     demo: 'https://cameronriecan.github.io/To-Do-List/'
   },
   {
-    id: 6,
+    id: 7,
     image: IMG6,
     title: 'Project Coming Soon...',
     github: '', //Empty URL
