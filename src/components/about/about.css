@@ -102,7 +102,7 @@
     }
 
     .about_content p {
-        margin: 1rem 0;
+        margin: 1rem auto;
     }
 }
 
@@ -110,5 +110,9 @@
 @media screen and (max-width: 600px) {
     .about_me {
         margin: 1rem auto 2rem;
+    }
+
+    .about_content p {
+        margin: 1.2rem auto 1.6rem;
     }
 }
