@@ -58,6 +58,7 @@ nav a.active {
     width: max-content;
     background-color: var(--color-primary);
     color: var(--color-bg);
+    font-size: 0.9rem;
     text-align: center;
     bottom: 100%;
     left: 50%;
@@ -74,4 +75,22 @@ nav a.active {
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
+}
+
+/* Create an arrow pointing down to the icon */
+.tooltiptext::before {
+    content: '';
+    position: absolute;
+    top: calc(100% + 5px); 
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent transparent var(--color-light) transparent;
+    z-index: 1001;
+}
+
+/* Adjust the vertical position of the text */
+span {
+    margin-bottom: 5px; 
 }
