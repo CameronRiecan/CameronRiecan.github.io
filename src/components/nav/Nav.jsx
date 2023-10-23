@@ -29,13 +29,13 @@ const Nav = () => {
     // Determine which section is in the viewport based on scroll position
     const scrollPosition = window.scrollY;
     const viewportHeight = window.innerHeight;
+    const sectionHeight = viewportHeight / 2; //to change icon when at half of screen
 
     const aboutSection = document.getElementById('about').offsetTop;
     const experienceSection = document.getElementById('experience').offsetTop;
     const servicesSection = document.getElementById('services').offsetTop;
     const contactSection = document.getElementById('contact').offsetTop;
     const portfolioSection = document.getElementById('portfolio').offsetTop;
-    const sectionHeight = viewportHeight / 2; //to change icon when at half of screen
 
     if (scrollPosition < aboutSection - sectionHeight) {
       setActiveNav('#top');
@@ -44,7 +44,7 @@ const Nav = () => {
     } else if (scrollPosition < servicesSection - sectionHeight) {
       setActiveNav('#experience');
     } else if (scrollPosition < portfolioSection - sectionHeight) {
-        setActiveNav('#services');
+      setActiveNav('#services');
     } else if (scrollPosition < contactSection - sectionHeight) {
       setActiveNav('#portfolio');
     } else {
