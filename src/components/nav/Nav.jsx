@@ -105,17 +105,19 @@ const Nav = () => {
       <a
         href='#portfolio'
         onClick={() => setActiveNav('#portfolio')}
-        className={activeNav === '#portfolio' ? 'active' : ''}
+        className={`tooltip ${activeNav === '#portfolio' ? 'active' : ''}`}
         aria-label='Portfolio'
       >
+        <span className="tooltiptext">Portfolio</span>
         <AiOutlineFolderOpen aria-hidden='true' />
       </a>
       <a
         href='#contact'
         onClick={() => setActiveNav('#contact')}
-        className={activeNav === '#contact' ? 'active' : ''}
+        className={`tooltip ${activeNav === '#contact' ? 'active' : ''}`}
         aria-label='Contact'
       >
+        <span className="tooltiptext">Contact</span>
         <BiMessageSquareDetail aria-hidden='true' />
       </a>
       <DarkModeToggle aria-hidden='true'/> {/* Include your DarkModeToggle component */}
