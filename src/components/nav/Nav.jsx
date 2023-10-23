@@ -78,9 +78,10 @@ const Nav = () => {
       <a
         href='#about'
         onClick={() => setActiveNav('#about')}
-        className={activeNav === '#about' ? 'active' : ''}
+        className={`tooltip ${activeNav === '#about' ? 'active' : ''}`}
         aria-label='About'
       >
+        <span className="tooltiptext">About Me</span>
         <AiOutlineUser aria-hidden='true' />
       </a>
       <a
