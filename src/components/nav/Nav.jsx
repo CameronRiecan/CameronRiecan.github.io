@@ -87,17 +87,19 @@ const Nav = () => {
       <a
         href='#experience'
         onClick={() => setActiveNav('#experience')}
-        className={activeNav === '#experience' ? 'active' : ''}
+        className={`tooltip ${activeNav === '#experience' ? 'active' : ''}`}
         aria-label='Experience'
       >
+        <span className="tooltiptext">Experience</span>
         <BiBook aria-hidden='true' />
       </a>
       <a
         href='#services'
         onClick={() => setActiveNav('#services')}
-        className={activeNav === '#services' ? 'active' : ''}
+        className={`tooltip ${activeNav === '#services' ? 'active' : ''}`}
         aria-label='Services'
       >
+        <span className="tooltiptext">Services</span>
         <RiServiceLine aria-hidden='true' />
       </a>
       <a
