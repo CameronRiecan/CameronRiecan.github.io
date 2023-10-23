@@ -69,17 +69,16 @@ const Nav = () => {
         setActiveNav('#top');
         scrollToTop();
       }}
-      className={activeNav === '#top' ? 'active' : ''}
-      role="link"
+      className={`tooltip ${activeNav === '#top' ? 'active' : ''}`}
       aria-label='Home'
       >
         <AiOutlineHome aria-hidden='true'/>
+        <span className='tooltiptext'>Scroll to Top</span>
       </a>
       <a
         href='#about'
         onClick={() => setActiveNav('#about')}
         className={activeNav === '#about' ? 'active' : ''}
-        role='link'
         aria-label='About'
       >
         <AiOutlineUser aria-hidden='true' />
@@ -88,7 +87,6 @@ const Nav = () => {
         href='#experience'
         onClick={() => setActiveNav('#experience')}
         className={activeNav === '#experience' ? 'active' : ''}
-        role='link'
         aria-label='Experience'
       >
         <BiBook aria-hidden='true' />
@@ -97,7 +95,6 @@ const Nav = () => {
         href='#services'
         onClick={() => setActiveNav('#services')}
         className={activeNav === '#services' ? 'active' : ''}
-        role='link'
         aria-label='Services'
       >
         <RiServiceLine aria-hidden='true' />
@@ -106,7 +103,6 @@ const Nav = () => {
         href='#portfolio'
         onClick={() => setActiveNav('#portfolio')}
         className={activeNav === '#portfolio' ? 'active' : ''}
-        role='link'
         aria-label='Portfolio'
       >
         <AiOutlineFolderOpen aria-hidden='true' />
@@ -115,7 +111,6 @@ const Nav = () => {
         href='#contact'
         onClick={() => setActiveNav('#contact')}
         className={activeNav === '#contact' ? 'active' : ''}
-        role='link'
         aria-label='Contact'
       >
         <BiMessageSquareDetail aria-hidden='true' />
