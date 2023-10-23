@@ -99,5 +99,6 @@ span {
 @media screen and (max-width: 600px) {
     .tooltip .tooltiptext {
         padding: 3px 6px;
+        font-size: 0.8rem;
     }
 }
