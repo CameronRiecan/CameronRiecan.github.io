@@ -22,7 +22,7 @@ nav a {
     color: var(--color-light);
     font-size: 1.1rem;
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 nav a::before {
@@ -51,9 +51,27 @@ nav a.active {
     color: var(--color-bg);
 }
 
-/* Tooltip class for nav */
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px solid black; /* If you want dots under the hoverable text */
-  }
+/* Tooltip Class for Nav */
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: max-content;
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    text-align: center;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 15px;
+    border-radius: 0.4rem;
+    position: absolute;
+    z-index: 1000; /* Increase the z-index value */
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.2s;
+    overflow: visible;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}

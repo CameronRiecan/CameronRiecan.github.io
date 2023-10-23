@@ -71,8 +71,8 @@ const Nav = () => {
       }}
       className={`tooltip ${activeNav === '#top' ? 'active' : ''}`}
       aria-label='Home'
-      title='Scroll to Top'
       >
+        <span className="tooltiptext">Scroll to Top</span>
         <AiOutlineHome aria-hidden='true'/>
       </a>
       <a
