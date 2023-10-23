@@ -10,6 +10,7 @@
 .contact_options {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly; /* make sure cards match height of form */
     gap: 1.2rem;
 }
 
@@ -60,16 +61,16 @@ label {
     font-size: 0.8rem;
 }
 
-.contact_options {
-    justify-content: space-evenly; /* make sure cards match height of form */
-}
-
 /* Media Queries (Medium Devices) */
 @media screen and (max-width: 1024px) {
     .container.contact_container {
         grid-template-columns: 1fr;
         grid-template-rows: 30% 58%;
         gap: 12%;
+    }
+
+    div > .contact_options {
+        margin-top: 4rem;
     }
 
     button {
