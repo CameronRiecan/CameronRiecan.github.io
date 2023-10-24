@@ -49,7 +49,7 @@
 .service_list-icon {
     color: var(--color-primary);
     margin-top: 2px;
-    min-width: fit-content;
+    min-width: 1rem;
 }
 
 .service_list p {
