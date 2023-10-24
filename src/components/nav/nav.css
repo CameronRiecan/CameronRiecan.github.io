@@ -81,7 +81,7 @@ nav a.active {
 .tooltiptext::before {
     content: '';
     position: absolute;
-    top: calc(100% + 5px); 
+    top: calc(100% + 5px);
     left: 50%;
     transform: translateX(-50%);
     border-width: 6px;
@@ -92,7 +92,7 @@ nav a.active {
 
 /* Adjust the vertical position of the text */
 span {
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
 }
 
 /* Media Queries (Small Devices) */
