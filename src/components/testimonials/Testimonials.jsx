@@ -6,7 +6,7 @@ import AVTR3 from '../../assets/avatar3.jpg'
 import AVTR4 from '../../assets/avatar4.jpg'
 
 // import Swiper core and required modules
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, A11y } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -46,16 +46,16 @@ const Testimonials = () => {
       <h2>Achievements & Certifications</h2>
 
       <Swiper className="container testimonials_container"
-      modules={[Navigation, Pagination]}
+      modules={[Navigation, Pagination, A11y]}
       spaceBetween={40}
       loop={true}
       slidesPerView={1}
       navigation
       pagination={{
         clickable: true,
-        renderBullet: (index) => {
-          return <span aria-label={`${data[index].name}: ${data[index].review}`} />;
-        }
+        // renderBullet: (index) => {
+        //   <span aria-label={`${data[index].name}: ${data[index].review}`}></span>;
+        // }
       }}
       >
         {
@@ -67,6 +67,10 @@ const Testimonials = () => {
                 </div>
                 <h5 className='client_name'>{name}</h5>
                 <small className='client_review'>{review}</small>
+                <span
+                  role="listitem"
+                  aria-label={`${data[index].name}: ${data[index].review}`}
+                ></span>
               </SwiperSlide>
             )
           })
