@@ -68,7 +68,6 @@ const Testimonials = () => {
                 <h5 className='client_name'>{name}</h5>
                 <small className='client_review'>{review}</small>
                 <span
-                  role="listitem"
                   aria-label={`${data[index].name}: ${data[index].review}`}
                 ></span>
               </SwiperSlide>
