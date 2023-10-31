@@ -54,7 +54,7 @@ const Testimonials = () => {
       pagination={{
         clickable: true,
         renderBullet: (index) => {
-          return `<span aria-label="${data[index].name}: ${data[index].review}"></span>`;
+          return <span aria-label={`${data[index].name}: ${data[index].review}`} />;
         }
       }}
       >
