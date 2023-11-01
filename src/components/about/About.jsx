@@ -25,7 +25,7 @@ const About = () => {
               <h5>Experience</h5>
               <small>2+ Years </small>
               <small>Junior Dev exp, </small>
-              <small>and Freelance</small>
+              <small>and Freelance Web Dev</small>
             </article>
 
             <article className='about_card'>
